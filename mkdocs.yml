@@ -3,3 +3,12 @@ site_name: SusI
 #    - search
 markdown_extensions:
   - admonition
+theme:
+  name: null
+  custom_dir: 'cinder'
+nav:
+  - Home: index.md
+  - Project: project/index.md
+  - Integration: integration/index.md
+  - User Documentation: Viplab-Frontend/index.md
+  - Technical Documentation: viplab3.0/index.md
