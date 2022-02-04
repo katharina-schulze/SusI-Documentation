@@ -1,3 +1,9 @@
-# ViPLab 3.0
+# Introduction to SusI
 
-Here the technical docu will be linked?
+Here the project will be described
+
+<figure markdown>
+  |![SusI Overview Graphic](../images/susi_grafik.jpg){: style="max-width: 100%"}|
+  |:---:|
+  |<figcaption>SusI Overview</figcaption>|
+</figure>

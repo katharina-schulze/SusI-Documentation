@@ -3,6 +3,8 @@ site_name: SusI
 #    - search
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
 theme:
   name: null
   custom_dir: 'cinder'
@@ -12,3 +14,5 @@ nav:
   - Integration: integration/index.md
   - User Documentation: Viplab-Frontend/index.md
   - Technical Documentation: viplab3.0/index.md
+extra:
+  collapse_toc: false
