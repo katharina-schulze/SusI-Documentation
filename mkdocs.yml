@@ -1,0 +1,5 @@
+site_name: SusI
+#plugins:
+#    - search
+markdown_extensions:
+  - admonition
