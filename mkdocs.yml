@@ -12,7 +12,7 @@ nav:
   - Home: index.md
   - Project: project/index.md
   - Integration: integration/index.md
-  - User Documentation: Viplab-Frontend/index.md
-  - Technical Documentation: viplab3.0/index.md
+  - User Guide: Viplab-Frontend/index.md
+  - Developer Guide: viplab3.0/index.md
 extra:
   collapse_toc: false

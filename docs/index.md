@@ -4,7 +4,7 @@
 archivability of research software on the example of the
 porous-media-simulator DuMu<sup>x</sup>
 
-Das Projekt SusI hat das Ziel, die Open-Source-Simulationssoftware DuMux für einen größeren Kreis von Wissenschaftlern nutzbar zu machen. Darüber hinaus sollen durch die Nutzung von DuMux gewonnen Erkenntnisse zusammen mit dem Quellcode im <a href="https://www.izus.uni-stuttgart.de/fokus/darus" alt="DaRUS">Forschungsdatenmanagementsystem</a> der Universität Stuttgart gespeichert, aufgerufen und wiederverwendet werden können.
+The project SusI has the goal to make the Open-Source-Simulationsoftware DuMu<sup>x</sup> usable for a larger group of scientists. Moreover the insights gained using DuMu<sup>x</sup> together with the used code should be able to be saved, called and reused using [DaRUS](https://www.izus.uni-stuttgart.de/fokus/darus), the managing system for resarch data of the University of Stuttgart. 
 
 ---
 
