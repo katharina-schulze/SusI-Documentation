@@ -6,8 +6,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
 theme:
-  name: null
-  custom_dir: 'cinder'
+  name: material
+#  name: null
+#  custom_dir: 'cinder'
 nav:
   - Home: index.md
   - Integration: integration/
