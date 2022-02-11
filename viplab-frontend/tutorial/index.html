@@ -8,10 +8,10 @@
     
     
     
-    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
 
     
-    <title>Integration of ViPLab - ViPLab</title>
+    <title>Tutorial - ViPLab</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
     <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="../css/base.min.css" rel="stylesheet">
-    <link href="../css/cinder.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
 
     
         
@@ -59,7 +59,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href="..">ViPLab</a>
+              <a class="navbar-brand" href="../..">ViPLab</a>
             
         </div>
 
@@ -70,36 +70,36 @@
                 
                 
                     <li >
-                        <a href="..">Home</a>
+                        <a href="../..">Home</a>
                     </li>
                 
                 
                 
                     <li >
-                        <a href="./">Integration</a>
+                        <a href="../../integration/">Integration</a>
                     </li>
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../viplab-frontend/">Overview</a>
+    <a href="../">Overview</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Tutorial</a>
 </li>
 
                         
                             
 <li >
-    <a href="../viplab-frontend/tutorial/">Tutorial</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../viplab-frontend/frontend/">Frontend</a>
+    <a href="../frontend/">Frontend</a>
 </li>
 
                         
@@ -114,43 +114,43 @@
                         
                             
 <li >
-    <a href="../viplab3.0/">Overview</a>
+    <a href="../../viplab3.0/">Overview</a>
 </li>
 
                         
                             
 <li >
-    <a href="../viplab3.0/computation/">Computation</a>
+    <a href="../../viplab3.0/computation/">Computation</a>
 </li>
 
                         
                             
 <li >
-    <a href="../viplab3.0/computation_result/">Computation Result</a>
+    <a href="../../viplab3.0/computation_result/">Computation Result</a>
 </li>
 
                         
                             
 <li >
-    <a href="../viplab3.0/computation_task/">Computation Task</a>
+    <a href="../../viplab3.0/computation_task/">Computation Task</a>
 </li>
 
                         
                             
 <li >
-    <a href="../viplab3.0/computation_template/">Computation Template</a>
+    <a href="../../viplab3.0/computation_template/">Computation Template</a>
 </li>
 
                         
                             
 <li >
-    <a href="../viplab3.0/system_status/">System Status</a>
+    <a href="../../viplab3.0/system_status/">System Status</a>
 </li>
 
                         
                             
 <li >
-    <a href="../viplab3.0/versioning/">Versioning</a>
+    <a href="../../viplab3.0/versioning/">Versioning</a>
 </li>
 
                         
@@ -160,7 +160,7 @@
                 
                 
                     <li >
-                        <a href="../history/">History</a>
+                        <a href="../../history/">History</a>
                     </li>
                 
                 
@@ -170,6 +170,16 @@
                     <li>
                         <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
                             <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../frontend/">
+                            Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
             </ul>
@@ -182,15 +192,25 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#integration-of-viplab">Integration of ViPLab</a></li>
+        <li class="first-level active"><a href="#tutorial">Tutorial</a></li>
+            <li class="second-level"><a href="#situation">Situation</a></li>
+                
+            <li class="second-level"><a href="#steps">Steps</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="integration-of-viplab">Integration of ViPLab</h1>
-<p>Here you can find links to repositories, where ViPLab has been integrated. You can take a look at these examples and either use them or create your own integration.</p>
-<p><a href="https://example.com/">Integration of ViPLab into DaRUS</a></p>
-<p>More will be added in the future...</p></div>
+<h1 id="tutorial">Tutorial</h1>
+<h2 id="situation">Situation</h2>
+<p>You have done some research and want to make the code you created available to other scientists, so they can take a better look at your results. 
+For this, ViPLab was integrated into your institutions management system for research data (see Chapter on <a href="../../integration/">Integration</a>)</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Create a Docker Image of your Research Software</li>
+<li>Write a Computation Template</li>
+<li></li>
+</ol></div>
         
         
     </div>
@@ -210,7 +230,7 @@
       </footer>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
 
     
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
@@ -218,10 +238,10 @@
     <script>hljs.initHighlightingOnLoad();</script>
     
 
-    <script>var base_url = ".."</script>
+    <script>var base_url = "../.."</script>
     
-    <script src="../js/base.js"></script>
-    <script src="../search/main.js"></script>
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
