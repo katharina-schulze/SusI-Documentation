@@ -1,29 +1,58 @@
 site_name: ViPLab
-#plugins:
-#    - search
+plugins:
+    - search
 markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+repo_url: https://github.com/VirtualProgrammingLab
+repo_name: VirtualProgrammingLab
+copyright: Copyright &copy; Universität Stuttgart
 theme:
   name: material
+  logo: images/viplab.png
+  favicon: images/viplab.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+  palette:
+    - scheme: default
+      primary: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+    - scheme: slate 
+      primary: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 #  name: null
 #  custom_dir: 'cinder'
 nav:
-  - Home: index.md
-  - Integration: integration/
+  - index.md
+  - Integration: 
+    - integration/index.md
   - User Guide: 
-    - Overview: viplab-frontend/index.md
+    - viplab-frontend/index.md
     - Tutorial: viplab-frontend/tutorial.md
     - Frontend: viplab-frontend/frontend.md
   - Developer Guide: 
-    - Overview: viplab3.0/index.md
+    - viplab3.0/index.md
     - Computation: viplab3.0/computation.md
     - Computation Result: viplab3.0/computation_result.md
     - Computation Task: viplab3.0/computation_task.md
     - Computation Template: viplab3.0/computation_template.md
     - System Status: viplab3.0/system_status.md
     - Versioning: viplab3.0/versioning.md
-  - History: history/index.md
+  - History: 
+    - history/index.md
 extra:
   collapse_toc: false
+
