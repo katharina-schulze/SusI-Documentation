@@ -1,4 +1,9 @@
-# ViPLab Frontend
+# User Guide
 
+**You are a scientist that wants to pubicize reseach software?** <br>
+Click here to find a tutorial on how to do that:
+[Tutorial](tutorial.md)
 
-Here the user docu will be added!
+**You want to inspect and try out software that was uploaded to a research data management system?** <br>
+Click here, to learn more about the ViPLab Frontend: 
+[ViPLab Frontend](frentend.md)

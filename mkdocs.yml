@@ -10,8 +10,19 @@ theme:
   custom_dir: 'cinder'
 nav:
   - Home: index.md
-  - Integration: integration/index.md
-  - User Guide: viplab-frontend/index.md
-  - Developer Guide: viplab3.0/index.md
+  - Integration: integration/
+  - User Guide: 
+    - Overview: viplab-frontend/index.md
+    - Tutorial: viplab-frontend/tutorial.md
+    - Frontend: viplab-frontend/frontend.md
+  - Developer Guide: 
+    - Overview: viplab3.0/index.md
+    - Computation: viplab3.0/computation.md
+    - Computation Result: viplab3.0/computation_result.md
+    - Computation Task: viplab3.0/computation_task.md
+    - Computation Template: viplab3.0/computation_template.md
+    - System Status: viplab3.0/system_status.md
+    - Versioning: viplab3.0/versioning.md
+  - History: history/index.md
 extra:
   collapse_toc: false
