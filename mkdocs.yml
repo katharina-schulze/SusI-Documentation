@@ -1,4 +1,4 @@
-site_name: SusI
+site_name: ViPLab
 #plugins:
 #    - search
 markdown_extensions:
@@ -10,9 +10,8 @@ theme:
   custom_dir: 'cinder'
 nav:
   - Home: index.md
-  - Project: project/index.md
   - Integration: integration/index.md
-  - User Guide: Viplab-Frontend/index.md
+  - User Guide: viplab-frontend/index.md
   - Developer Guide: viplab3.0/index.md
 extra:
   collapse_toc: false

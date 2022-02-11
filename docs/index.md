@@ -1,20 +1,16 @@
-# Welcome to the SusI Documentation
+# Welcome to the ViPLab Documentation
 
-> Sustainable infrastructure for the improved usability and
-archivability of research software on the example of the
-porous-media-simulator DuMu<sup>x</sup>
+> Virtual Programming Laboratory
 
-The project SusI has the goal to make the Open-Source-Simulationsoftware DuMu<sup>x</sup> usable for a larger group of scientists. Moreover the insights gained using DuMu<sup>x</sup> together with the used code should be able to be saved, called and reused using [DaRUS](https://www.izus.uni-stuttgart.de/fokus/darus), the managing system for resarch data of the University of Stuttgart. 
+The virtual programming lab ViPLab is a browser-based programming environment. It can be used in [ILIAS](https://www.ilias.de/) which enables the execution of programming tasks in online tests. In combination with a management system for research data, like [DaRUS](https://www.izus.uni-stuttgart.de/fokus/darus), scientists can publicize their code together with their results, for others to try and take a look at. 
 
 ---
 
 The documentation contains five main parts:
 
-- [Introduction to the SusI Project](project/index.md)
-- [Getting Started Guide](Getting-Started/index.md)
-- [ViPLab User Documenation](Viplab-Frontend/index.md)
-- [ViPLab Technical Documenation](viplab3.0/index.md) 
-- [ViPLab Integration into DaRUS Documenation](integration/index.md) 
+- [ViPLab Integration Documenation](integration/index.md) 
+- [ViPLab User Guide](Viplab-Frontend/index.md)
+- [ViPLab Technical Guide](viplab3.0/index.md) 
 
 ---
 
