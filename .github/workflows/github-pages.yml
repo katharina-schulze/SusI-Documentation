@@ -37,6 +37,13 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install -r ./requirements.txt
 
+      - run: |
+          cd docs/images
+          curl -LJO https://raw.githubusercontent.com/VirtualProgrammingLab/documentation/viplab3.0-json/docs/viplab3.0/versioning.md
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Adds File From Other Repo"
+          git push
+
       - run: mkdocs build
 
       - name: Deploy
