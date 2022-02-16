@@ -1,3 +1,10 @@
+<style>
+    /*Hide "Edit this page-Button*/
+    .md-content__button {
+        display: none;
+    }
+</style>
+
 # JSON Object Versioning Rules
 
 * Status: proposed

@@ -5,6 +5,7 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+edit_uri: https://github.com/KatLily-74656/SusI-Documentation/tree/master/docs
 repo_url: https://github.com/VirtualProgrammingLab
 repo_name: VirtualProgrammingLab
 copyright: Copyright &copy; Universität Stuttgart
@@ -23,12 +24,14 @@ theme:
     - toc.follow
     - navigation.top
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
       primary: light blue
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-    - scheme: slate 
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate 
       primary: light blue
       toggle:
         icon: material/toggle-switch
@@ -37,7 +40,7 @@ theme:
 #  custom_dir: 'cinder'
 nav:
   - index.md
-  - Integration: 
+  - Admin Guide: 
     - integration/index.md
   - User Guide: 
     - viplab-frontend/index.md
