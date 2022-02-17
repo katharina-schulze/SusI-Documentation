@@ -29,6 +29,7 @@ theme:
     - navigation.indexes
     - toc.follow
     - navigation.top
+    - content.code.annotate
   palette:
     - media: "(prefers-color-scheme: light)" 
       scheme: default
@@ -42,10 +43,6 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-  features:
-    - content.code.annotate
-#  name: null
-#  custom_dir: 'cinder'
 nav:
   - index.md
   - Admin Guide: 
