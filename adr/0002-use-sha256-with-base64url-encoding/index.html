@@ -13,7 +13,7 @@
     
     
       
-        <title>Frontend - ViPLab</title>
+        <title>ADR-0002 - ViPLab</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#viplab-frontend" class="md-skip">
+        <a href="#use-sha256-and-base64url-encoding-for-verifying-json" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Frontend
+              ADR-0002
             
           </span>
         </div>
@@ -212,15 +212,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../viplab-frontend/" class="md-tabs__link">
         User Guide
       </a>
     </li>
@@ -246,13 +244,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../adr/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         ADRs
       </a>
     </li>
@@ -461,14 +461,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -488,7 +486,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">User Guide</a>
+          <a href="../../viplab-frontend/">User Guide</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -511,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ilias.md" class="md-nav__link">
+      <a href="../../viplab-frontend/ilias.md" class="md-nav__link">
         ViPLab In ILIAS
       </a>
     </li>
@@ -525,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tutorial/" class="md-nav__link">
+      <a href="../../viplab-frontend/tutorial/" class="md-nav__link">
         Tutorial
       </a>
     </li>
@@ -537,21 +535,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../viplab-frontend/frontend/" class="md-nav__link">
         Frontend
       </a>
-      
     </li>
   
 
@@ -697,12 +685,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -728,7 +718,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../adr/">ADRs</a>
+          <a href="../">ADRs</a>
           
             <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
@@ -751,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0000-use-markdown-architectural-decision-records/" class="md-nav__link">
+      <a href="../0000-use-markdown-architectural-decision-records/" class="md-nav__link">
         ADR-0000
       </a>
     </li>
@@ -765,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0001-use-json-web-tokens/" class="md-nav__link">
+      <a href="../0001-use-json-web-tokens/" class="md-nav__link">
         ADR-0001
       </a>
     </li>
@@ -777,11 +767,134 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../adr/0002-use-sha256-with-base64url-encoding/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ADR-0002
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         ADR-0002
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context-and-problem-statement" class="md-nav__link">
+    Context and Problem Statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-drivers" class="md-nav__link">
+    Decision Drivers 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considered-options" class="md-nav__link">
+    Considered Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-outcome" class="md-nav__link">
+    Decision Outcome
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Outcome">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-consequences" class="md-nav__link">
+    Positive Consequences 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-consequences" class="md-nav__link">
+    Negative Consequences 
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pros-and-cons-of-the-options" class="md-nav__link">
+    Pros and Cons of the Options 
+  </a>
+  
+    <nav class="md-nav" aria-label="Pros and Cons of the Options ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transfer-complete-json-via-secure-channel" class="md-nav__link">
+    Transfer complete json via secure channel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-sha256-hash-of-base64url-encoded-json" class="md-nav__link">
+    Send SHA256 hash of Base64Url encoded json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-sha256-hash-of-formatted-json" class="md-nav__link">
+    Send SHA256 hash of formatted json
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links 
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -793,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0003-transfere-hash-in-jwt-claim/" class="md-nav__link">
+      <a href="../0003-transfere-hash-in-jwt-claim/" class="md-nav__link">
         ADR-0003
       </a>
     </li>
@@ -807,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0004-use-asymmetric-jwt-signing/" class="md-nav__link">
+      <a href="../0004-use-asymmetric-jwt-signing/" class="md-nav__link">
         ADR-0004
       </a>
     </li>
@@ -821,7 +934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/versioning/" class="md-nav__link">
+      <a href="../versioning/" class="md-nav__link">
         Versioning
       </a>
     </li>
@@ -899,6 +1012,103 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context-and-problem-statement" class="md-nav__link">
+    Context and Problem Statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-drivers" class="md-nav__link">
+    Decision Drivers 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considered-options" class="md-nav__link">
+    Considered Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-outcome" class="md-nav__link">
+    Decision Outcome
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Outcome">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-consequences" class="md-nav__link">
+    Positive Consequences 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-consequences" class="md-nav__link">
+    Negative Consequences 
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pros-and-cons-of-the-options" class="md-nav__link">
+    Pros and Cons of the Options 
+  </a>
+  
+    <nav class="md-nav" aria-label="Pros and Cons of the Options ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transfer-complete-json-via-secure-channel" class="md-nav__link">
+    Transfer complete json via secure channel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-sha256-hash-of-base64url-encoded-json" class="md-nav__link">
+    Send SHA256 hash of Base64Url encoded json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-sha256-hash-of-formatted-json" class="md-nav__link">
+    Send SHA256 hash of formatted json
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links 
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -909,13 +1119,80 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/KatLily-74656/SusI-Documentation/tree/master/docs/viplab-frontend/frontend.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/KatLily-74656/SusI-Documentation/tree/master/docs/adr/0002-use-sha256-with-base64url-encoding.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="viplab-frontend">ViPLab Frontend</h1>
-<p>Here there will be screenshots and descriptions of the grafical user interface of ViPLab...</p>
+<h1 id="use-sha256-and-base64url-encoding-for-verifying-json">Use SHA256 and Base64Url encoding for verifying json</h1>
+<ul>
+<li>Status: proposed</li>
+<li>Deciders: Leon Kiefer</li>
+<li>Date: 2019-12-13</li>
+</ul>
+<h2 id="context-and-problem-statement">Context and Problem Statement</h2>
+<p>We have to transfer json data and verify the integrity of the data.
+The transfer involves an Authorization server which provides the json, a client which gets the data form that server and pass it to the WebSocket API.
+The WebSocket API must able to verify the integrity of the json data.</p>
+<h2 id="decision-drivers">Decision Drivers <!-- optional --></h2>
+<ul>
+<li>Use standard encodings</li>
+</ul>
+<h2 id="considered-options">Considered Options</h2>
+<ul>
+<li>Transfer complete json via secure channel</li>
+<li>Send SHA256 hash of Base64Url encoded json</li>
+<li>Send SHA256 hash of formatted json</li>
+</ul>
+<h2 id="decision-outcome">Decision Outcome</h2>
+<p>Chosen option: "Send SHA256 hash of Base64Url encoded json", because this method is platform independent and not much session state is required.</p>
+<h3 id="positive-consequences">Positive Consequences <!-- optional --></h3>
+<ul>
+<li>The JWT really function as a verification token for the other requests.</li>
+<li>Can be applied to all json data that must be verified.</li>
+</ul>
+<h3 id="negative-consequences">Negative Consequences <!-- optional --></h3>
+<ul>
+<li>The json must be transferred in Base64Url encoding</li>
+</ul>
+<h2 id="pros-and-cons-of-the-options">Pros and Cons of the Options <!-- optional --></h2>
+<h3 id="transfer-complete-json-via-secure-channel">Transfer complete json via secure channel</h3>
+<p>The complete json data is transferred using a secure channel, like a JWT Token Claim.
+The secure channel takes care of the Integrity and the transport.</p>
+<ul>
+<li>Good, because well known solutions can be used.</li>
+<li>Good, because very secure.</li>
+<li>Bad, because depending on selected secure channel many data have to be stored in a session state.</li>
+<li>Bad, because there are limitations how many data can be transferred at once using a secure channel.</li>
+</ul>
+<h3 id="send-sha256-hash-of-base64url-encoded-json">Send SHA256 hash of Base64Url encoded json</h3>
+<p>The json is encoded with Base64Url encoding (RFC 4648).
+The Base64 String is then transferred instead of the raw json.
+For the Base64 string the message digest using SHA256 (FIPS PUB 180-4) is computed and used to verify the integrity.
+The message digest is a sequence of bytes and should be encoded to a lower-case hex string to transfer it over a secure channel like JWT.</p>
+<ul>
+<li>Good, because the Integrity of the json can be verified simply.</li>
+<li>Good, because only the small hex encoded message digest must be transferred over a secure channel.</li>
+<li>Bad, because the json is transferred Base64 encoded and must be decoded before use.</li>
+<li>Bad, because this must be implemented by hand.</li>
+</ul>
+<h3 id="send-sha256-hash-of-formatted-json">Send SHA256 hash of formatted json</h3>
+<p>The json can be transferred in any format.
+To verify the integrity, the json is formatted in a way, that the same json info set result in the same json string representation on all platforms.
+This json string is then hashed using SHA256 (FIPS PUB 180-4) and the message digest can be used the verify the integrity.
+The message digest is a sequence of bytes and can be Base64Url encoded to transferred it over a secure channel like JWT.</p>
+<ul>
+<li>Good, because only the small Base64 encoded message digest must be transferred over a secure channel.</li>
+<li>Good, because json can be be transferred as is.</li>
+<li>Bad, because difficult to get a consistent formatting across platforms.</li>
+<li>Bad, because heavily depends on the json formatting library</li>
+<li>Bad, because this must be implemented by hand.</li>
+</ul>
+<h2 id="links">Links <!-- optional --></h2>
+<ul>
+<li><a href="../0001-use-json-web-tokens/">ADR-0001</a></li>
+<li><a href="../0003-transfere-hash-in-jwt-claim/">ADR-0003</a></li>
+</ul>
 
               
             </article>
@@ -934,7 +1211,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../tutorial/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tutorial" rel="prev">
+        <a href="../0001-use-json-web-tokens/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ADR-0001" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -943,20 +1220,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Tutorial
+              ADR-0001
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../viplab3.0/" class="md-footer__link md-footer__link--next" aria-label="Next: Developer Guide" rel="next">
+        <a href="../0003-transfere-hash-in-jwt-claim/" class="md-footer__link md-footer__link--next" aria-label="Next: ADR-0003" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Developer Guide
+              ADR-0003
             </div>
           </div>
           <div class="md-footer__button md-icon">

@@ -13,7 +13,7 @@
     
     
       
-        <title>Versioning - ViPLab</title>
+        <title>ADR-0001 - ViPLab</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#json-object-versioning-rules" class="md-skip">
+        <a href="#use-json-web-tokens" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Versioning
+              ADR-0001
             
           </span>
         </div>
@@ -202,7 +202,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../integration/" class="md-tabs__link">
+      <a href="../../admin/index.md" class="md-tabs__link">
         Admin Guide
       </a>
     </li>
@@ -228,6 +228,22 @@
         
   
   
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../viplab3.0/" class="md-tabs__link">
+        Developer Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
     
   
 
@@ -237,7 +253,7 @@
   
     <li class="md-tabs__item">
       <a href="../" class="md-tabs__link md-tabs__link--active">
-        Developer Guide
+        ADRs
       </a>
     </li>
   
@@ -340,17 +356,21 @@
       
         
           
-            
+        
+          
+        
+          
+        
+          
+        
           
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../integration/">Admin Guide</a>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_2">
+          Admin Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Admin Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
@@ -359,6 +379,74 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/index.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/architecture.md" class="md-nav__link">
+        Architecture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/docker.md" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/interface.md" class="md-nav__link">
+        Interface to Websocket API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/integration.md" class="md-nav__link">
+        Integration
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -391,6 +479,8 @@
         
           
         
+          
+        
       
       
         
@@ -411,6 +501,20 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viplab-frontend/ilias.md" class="md-nav__link">
+        ViPLab In ILIAS
+      </a>
+    </li>
+  
+
             
           
             
@@ -453,6 +557,134 @@
 
   
   
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../viplab3.0/">Developer Guide</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Developer Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Developer Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viplab3.0/computation/" class="md-nav__link">
+        Computation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viplab3.0/computation_result/" class="md-nav__link">
+        Computation Result
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viplab3.0/computation_task/" class="md-nav__link">
+        Computation Task
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viplab3.0/computation_template/" class="md-nav__link">
+        Computation Template
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viplab3.0/system_status/" class="md-nav__link">
+        System Status
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -460,7 +692,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -486,18 +718,18 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Developer Guide</a>
+          <a href="../">ADRs</a>
           
-            <label for="__nav_4">
+            <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" aria-label="Developer Guide" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+      <nav class="md-nav" aria-label="ADRs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
-          Developer Guide
+          ADRs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -509,64 +741,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../computation/" class="md-nav__link">
-        Computation
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../computation_result/" class="md-nav__link">
-        Computation Result
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../computation_task/" class="md-nav__link">
-        Computation Task
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../computation_template/" class="md-nav__link">
-        Computation Template
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../system_status/" class="md-nav__link">
-        System Status
+      <a href="../0000-use-markdown-architectural-decision-records/" class="md-nav__link">
+        ADR-0000
       </a>
     </li>
   
@@ -589,12 +765,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Versioning
+          ADR-0001
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Versioning
+        ADR-0001
       </a>
       
         
@@ -665,12 +841,32 @@
     Pros and Cons of the Options
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    Links
+    <nav class="md-nav" aria-label="Pros and Cons of the Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jwt-from-pre-shared-keys" class="md-nav__link">
+    JWT from pre-shared keys
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-auth" class="md-nav__link">
+    Basic Auth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oauth-20" class="md-nav__link">
+    OAuth 2.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -678,6 +874,62 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0002-use-sha256-with-base64url-encoding/" class="md-nav__link">
+        ADR-0002
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0003-transfere-hash-in-jwt-claim/" class="md-nav__link">
+        ADR-0003
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0004-use-asymmetric-jwt-signing/" class="md-nav__link">
+        ADR-0004
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../versioning/" class="md-nav__link">
+        Versioning
+      </a>
     </li>
   
 
@@ -700,7 +952,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -719,7 +971,7 @@
         </div>
       
       <nav class="md-nav" aria-label="History" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           History
         </label>
@@ -812,12 +1064,32 @@
     Pros and Cons of the Options
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    Links
+    <nav class="md-nav" aria-label="Pros and Cons of the Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jwt-from-pre-shared-keys" class="md-nav__link">
+    JWT from pre-shared keys
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-auth" class="md-nav__link">
+    Basic Auth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oauth-20" class="md-nav__link">
+    OAuth 2.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -833,66 +1105,70 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/KatLily-74656/SusI-Documentation/tree/master/docs/viplab3.0/versioning.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/KatLily-74656/SusI-Documentation/tree/master/docs/adr/0001-use-json-web-tokens.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<style>
-    /*Hide "Edit this page-Button*/
-    .md-content__button {
-        display: none;
-    }
-</style>
-
-<h1 id="json-object-versioning-rules">JSON Object Versioning Rules</h1>
+<h1 id="use-json-web-tokens">Use JSON Web Tokens</h1>
 <ul>
-<li>Status: proposed</li>
-<li>Deciders: Leon Kiefer, Per Pascal Seeland</li>
-<li>Date: 2020-05-14</li>
+<li>Status: accepted</li>
+<li>Deciders: Leon Kiefer, Per Pascal Seeland, Anett Seeland</li>
+<li>Date: 2019-11-07</li>
 </ul>
-<p>Technical Story: https://github.com/VirtualProgrammingLab/documentation/issues/1</p>
 <h2 id="context-and-problem-statement">Context and Problem Statement</h2>
-<p>The ViPLab Projects defines a set of JSON-objects, which are used in the different components of the project. Since ViPLab itself does not 
-store any data, these objects have to be stored by third party systems. These will be, depending on the context they are used in either LMS (like ILIAS)
-or data repositories (like dataverse). There needs to be a way to identify the version of the different objects stored by the third party system to 
-allow e.g. upgrading/migrating the different components. </p>
+<p>External services must authorize web clients to the WebSocket API.
+The WebSocket API is stateless and not maintain a user Session with Cookies.
+Only little data should be stored for an open WebSocket connection.</p>
 <h2 id="decision-drivers">Decision Drivers</h2>
 <ul>
-<li>Provide a way to identify the version of the objects and also provide a path for e.g. upgrading the API endpoints used by those systems.</li>
+<li>decoupling of the authorization service and the WebSocket API</li>
+<li>flexible and well supported on many platforms</li>
 </ul>
 <h2 id="considered-options">Considered Options</h2>
 <ul>
-<li>Version all endpoints, but not the objects</li>
-<li>Version all objects, but not the endpoints</li>
-<li>Version parts of the objects and all of the endpoints.</li>
-<li>Version all objects and all of the endpoints.</li>
+<li>JWT from pre-shared keys</li>
+<li>Basic Auth</li>
+<li>OAuth 2.0</li>
 </ul>
 <h2 id="decision-outcome">Decision Outcome</h2>
-<p>It has been decided to version all long living objects, and all endpoints. The reason for requiring all objects to have version tags is for consistency
-reasons. Endpoints will only accept objects versions of one major version. Breaking changes will require to define a new version. Incremental 
-updates, which only extend the object are allowed. All systems are expected to handle these incremental updates gracefully. This means that a
-version 3.1.x message returned by the api must be accept by a 3.0.x client. The additional information contained by the api may be discarded. The same
-rules apply when a 3.1.x client talks to a 3.0.x api. The api will process the message according to the 3.0.x rules and extra information might be discarded.</p>
-<p>The client has to determine the correct endpoint versions to use. When the client will use a ComputationTemplate with version 3.x.x the corresponding
-websocket api will be ws://example.com/v3/computation. All other messages used in any further communication between the websocket-api and the client
-are also expected to be version 3.x.x. There is no possiblity to mix different versions. If a client wants to use a v4 api, he has to reconnect to the correct
-endpoint at ws://example.com/v4/computation</p>
-<p>The objects have been devided into three groups:
-- Long living object: ComputationTemplate, ComputationTask and ComputationResult
-- Wrappers: Computation
-- Message Types: CreateComputation and Result</p>
-<p>All long living objects are expected to be stored by clients and have version attribute on their top level of the json object, making it easy to get the information. Wrappers only exist during the communication between the client and the api and thus will not contain any version information, as it can be derived from the version of the api version they are being used with. Their only functionality is to group long living objects during a request. Messages Types are the messages used for the communication of the client with the websocket api. Like the wrappers they belong to a specific endpoint version and are also not versioned.</p>
+<p>Chosen option: "JWT from pre-shared keys", because the WebSocket API is loosely coupled and it is well supported on many platforms.</p>
 <h3 id="positive-consequences">Positive Consequences</h3>
-<p>Providing version information allows api and the client to be updated independently. It also allows the objects being held by the client to be easily identified without the need to either store this information somewhere external, where is might get lost or require some method to identify it based on the attributes available.</p>
+<ul>
+<li>Simple to implement</li>
+<li>Authorization data can be send in a portable and verifiable way</li>
+</ul>
 <h3 id="negative-consequences">Negative Consequences</h3>
-<p>The version needs to stored on all objects, which requires additional space and bandwidth. Also this information needs to be processed in the endpoints. But this in neglactable considered to the need of upgrading different systems of different third party users at once.</p>
+<ul>
+<li>The shared keys must be handled</li>
+</ul>
 <h2 id="pros-and-cons-of-the-options">Pros and Cons of the Options</h2>
-<p>Versioning either only the endpoints would still cause the issue, that a client needs to keep track of which implicit version an object has, to make sure he picks
-the right endpoint. This might also lead to the fact, that one might try to send the data to the wrong endpoint, since it is not known where it should belong.
-Only versioning the endpoints would require to add a lot of version identification cold on the api side, which should be avoided.</p>
-<p>Between the last to options, the only difference is, that the actions wrappers are not being versioned. This tradeoff has been made due to the fact, that they should never be stored somewhere and that they are considered stable for one api version. Adding actions or changing the wrappers itself will cause a upgrade of the api version.</p>
-<h2 id="links">Links</h2>
+<h3 id="jwt-from-pre-shared-keys">JWT from pre-shared keys</h3>
+<p>External service and WebSocket API have a pre-shared key (this does not mean it's a symmetric key).
+Each external service has it's own pre-shared key to identify it.
+The external services uses the pre-shared key to generate JWTs and add authorization data in the JWT Claims to allow clients access to parts of the WebSocket API.</p>
+<ul>
+<li>Good, because it is simple to implement</li>
+<li>Good, because many libraries available for almost all platforms</li>
+<li>Good, because authorization data can be included in the JWT</li>
+<li>Bad, because the pre-shared keys must be handled by the services</li>
+</ul>
+<h3 id="basic-auth">Basic Auth</h3>
+<p>The client uses credentials like username and password to authenticate to the WebSocket API.
+The WebSocket API manages the access control for clients and the external service can give clients the access.</p>
+<ul>
+<li>Good, because authorization is done only on the server side</li>
+<li>Bad, because user management must be implemented in the WebSocket API</li>
+<li>Bad, because access control must be implemented in the WebSocket API</li>
+<li>Bad, because each client need own credentials</li>
+</ul>
+<h3 id="oauth-20">OAuth 2.0</h3>
+<p>Similar to <a href="#basic-auth">Basic Auth</a> but the authorization is done using OAuth 2.0.</p>
+<ul>
+<li>Good, because integration of OAuth 2.0 Service</li>
+<li>Bad, because an OAuth 2.0 is required and must be configured for the correct access control</li>
+<li>Bad, because user management must be implemented in OAuth 2.0 Service</li>
+</ul>
 
               
             </article>
@@ -911,7 +1187,7 @@ Only versioning the endpoints would require to add a lot of version identificati
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../system_status/" class="md-footer__link md-footer__link--prev" aria-label="Previous: System Status" rel="prev">
+        <a href="../0000-use-markdown-architectural-decision-records/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ADR-0000" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -920,20 +1196,20 @@ Only versioning the endpoints would require to add a lot of version identificati
               <span class="md-footer__direction">
                 Previous
               </span>
-              System Status
+              ADR-0000
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../history/" class="md-footer__link md-footer__link--next" aria-label="Next: History" rel="next">
+        <a href="../0002-use-sha256-with-base64url-encoding/" class="md-footer__link md-footer__link--next" aria-label="Next: ADR-0002" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              History
+              ADR-0002
             </div>
           </div>
           <div class="md-footer__button md-icon">

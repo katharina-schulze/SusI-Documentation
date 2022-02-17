@@ -204,7 +204,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="integration/" class="md-tabs__link">
+      <a href="admin/index.md" class="md-tabs__link">
         Admin Guide
       </a>
     </li>
@@ -238,6 +238,22 @@
     <li class="md-tabs__item">
       <a href="viplab3.0/" class="md-tabs__link">
         Developer Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="adr/" class="md-tabs__link">
+        ADRs
       </a>
     </li>
   
@@ -325,9 +341,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Welcome to the ViPLab Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         Welcome to the ViPLab Documentation
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -350,17 +404,21 @@
       
         
           
-            
+        
+          
+        
+          
+        
+          
+        
           
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="integration/">Admin Guide</a>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_2">
+          Admin Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Admin Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
@@ -369,6 +427,74 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="admin/index.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="admin/architecture.md" class="md-nav__link">
+        Architecture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="admin/docker.md" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="admin/interface.md" class="md-nav__link">
+        Interface to Websocket API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="admin/integration.md" class="md-nav__link">
+        Integration
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -401,6 +527,8 @@
         
           
         
+          
+        
       
       
         
@@ -421,6 +549,20 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="viplab-frontend/ilias.md" class="md-nav__link">
+        ViPLab In ILIAS
+      </a>
+    </li>
+  
+
             
           
             
@@ -475,8 +617,6 @@
         
           
             
-          
-        
           
         
           
@@ -581,20 +721,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="viplab3.0/versioning/" class="md-nav__link">
-        Versioning
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -621,6 +747,150 @@
             
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="adr/">ADRs</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="ADRs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          ADRs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adr/0000-use-markdown-architectural-decision-records/" class="md-nav__link">
+        ADR-0000
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adr/0001-use-json-web-tokens/" class="md-nav__link">
+        ADR-0001
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adr/0002-use-sha256-with-base64url-encoding/" class="md-nav__link">
+        ADR-0002
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adr/0003-transfere-hash-in-jwt-claim/" class="md-nav__link">
+        ADR-0003
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adr/0004-use-asymmetric-jwt-signing/" class="md-nav__link">
+        ADR-0004
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adr/versioning/" class="md-nav__link">
+        Versioning
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+        
+          
+            
+          
+        
       
       
         
@@ -631,7 +901,7 @@
         </div>
       
       <nav class="md-nav" aria-label="History" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           History
         </label>
@@ -665,6 +935,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -682,18 +974,45 @@
 
 <h1 id="welcome-to-the-viplab-documentation">Welcome to the ViPLab Documentation</h1>
 <blockquote>
-<p>Virtual Programming Laboratory</p>
+<p>Virtual Programming Laboratory (ViPLab)</p>
 </blockquote>
 <p>The virtual programming lab ViPLab is a browser-based programming environment. It can be used in <a href="https://www.ilias.de/">ILIAS</a> which enables the execution of programming tasks in online tests. In combination with a management system for research data, like <a href="https://www.izus.uni-stuttgart.de/fokus/darus">DaRUS</a>, scientists can publicize their code together with their results, for others to try and take a look at. </p>
 <hr />
+<h2 id="structure">Structure</h2>
 <p>The documentation contains five main parts:</p>
 <ul>
-<li><a href="integration/">ViPLab Admin Guide</a> </li>
+<li><a href="integration/index.md">ViPLab Admin Guide</a> </li>
 <li><a href="viplab-frontend/">ViPLab User Guide</a></li>
-<li><a href="viplab3.0/">ViPLab Technical Guide</a> </li>
+<li><a href="viplab3.0/">ViPLab Developer Guide</a> </li>
+<li><a href="adr/">Architectural Decision Logs</a></li>
+<li><a href="history/">Project History</a></li>
 </ul>
 <hr />
-<p>In the following the project ist described...</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Support of the following Programming Languages:<ul>
+<li>C</li>
+<li>...</li>
+</ul>
+</li>
+<li>Displaying the following File-Types:<ul>
+<li>VTU &amp; VTK</li>
+<li>CSV</li>
+<li>PNG</li>
+<li>ViPLab Graphics Formats</li>
+</ul>
+</li>
+<li>Configure Parameters using GUI-Elements, like<ul>
+<li>Checkboxes</li>
+<li>Radio Buttons</li>
+<li>Toggle Buttons</li>
+<li>Sliders</li>
+<li>Input Fields</li>
+<li>Dropdowns</li>
+<li>Editors</li>
+</ul>
+</li>
+</ul>
 
               
             </article>
@@ -713,13 +1032,13 @@
       
       
         
-        <a href="integration/" class="md-footer__link md-footer__link--next" aria-label="Next: Integration of ViPLab" rel="next">
+        <a href="viplab-frontend/" class="md-footer__link md-footer__link--next" aria-label="Next: User Guide" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Integration of ViPLab
+              User Guide
             </div>
           </div>
           <div class="md-footer__button md-icon">

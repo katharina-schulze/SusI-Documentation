@@ -13,7 +13,7 @@
     
     
       
-        <title>Frontend - ViPLab</title>
+        <title>ADR-0004 - ViPLab</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#viplab-frontend" class="md-skip">
+        <a href="#use-asymmetric-jwt-signing" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Frontend
+              ADR-0004
             
           </span>
         </div>
@@ -212,15 +212,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../viplab-frontend/" class="md-tabs__link">
         User Guide
       </a>
     </li>
@@ -246,13 +244,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../adr/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         ADRs
       </a>
     </li>
@@ -461,14 +461,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -488,7 +486,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">User Guide</a>
+          <a href="../../viplab-frontend/">User Guide</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -511,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ilias.md" class="md-nav__link">
+      <a href="../../viplab-frontend/ilias.md" class="md-nav__link">
         ViPLab In ILIAS
       </a>
     </li>
@@ -525,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tutorial/" class="md-nav__link">
+      <a href="../../viplab-frontend/tutorial/" class="md-nav__link">
         Tutorial
       </a>
     </li>
@@ -537,21 +535,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../viplab-frontend/frontend/" class="md-nav__link">
         Frontend
       </a>
-      
     </li>
   
 
@@ -697,12 +685,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -728,7 +718,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../adr/">ADRs</a>
+          <a href="../">ADRs</a>
           
             <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
@@ -751,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0000-use-markdown-architectural-decision-records/" class="md-nav__link">
+      <a href="../0000-use-markdown-architectural-decision-records/" class="md-nav__link">
         ADR-0000
       </a>
     </li>
@@ -765,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0001-use-json-web-tokens/" class="md-nav__link">
+      <a href="../0001-use-json-web-tokens/" class="md-nav__link">
         ADR-0001
       </a>
     </li>
@@ -779,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0002-use-sha256-with-base64url-encoding/" class="md-nav__link">
+      <a href="../0002-use-sha256-with-base64url-encoding/" class="md-nav__link">
         ADR-0002
       </a>
     </li>
@@ -793,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/0003-transfere-hash-in-jwt-claim/" class="md-nav__link">
+      <a href="../0003-transfere-hash-in-jwt-claim/" class="md-nav__link">
         ADR-0003
       </a>
     </li>
@@ -805,11 +795,127 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../adr/0004-use-asymmetric-jwt-signing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ADR-0004
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         ADR-0004
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context-and-problem-statement" class="md-nav__link">
+    Context and Problem Statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-drivers" class="md-nav__link">
+    Decision Drivers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considered-options" class="md-nav__link">
+    Considered Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-outcome" class="md-nav__link">
+    Decision Outcome
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Outcome">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-consequences" class="md-nav__link">
+    Positive Consequences
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-consequences" class="md-nav__link">
+    Negative Consequences
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pros-and-cons-of-the-options" class="md-nav__link">
+    Pros and Cons of the Options
+  </a>
+  
+    <nav class="md-nav" aria-label="Pros and Cons of the Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asymmetric-jwt-signing" class="md-nav__link">
+    Asymmetric JWT signing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symmetric-jwt-signing" class="md-nav__link">
+    Symmetric JWT signing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -821,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../adr/versioning/" class="md-nav__link">
+      <a href="../versioning/" class="md-nav__link">
         Versioning
       </a>
     </li>
@@ -899,6 +1005,96 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context-and-problem-statement" class="md-nav__link">
+    Context and Problem Statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-drivers" class="md-nav__link">
+    Decision Drivers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considered-options" class="md-nav__link">
+    Considered Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-outcome" class="md-nav__link">
+    Decision Outcome
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Outcome">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-consequences" class="md-nav__link">
+    Positive Consequences
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-consequences" class="md-nav__link">
+    Negative Consequences
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pros-and-cons-of-the-options" class="md-nav__link">
+    Pros and Cons of the Options
+  </a>
+  
+    <nav class="md-nav" aria-label="Pros and Cons of the Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asymmetric-jwt-signing" class="md-nav__link">
+    Asymmetric JWT signing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symmetric-jwt-signing" class="md-nav__link">
+    Symmetric JWT signing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -909,13 +1105,67 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/KatLily-74656/SusI-Documentation/tree/master/docs/viplab-frontend/frontend.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/KatLily-74656/SusI-Documentation/tree/master/docs/adr/0004-use-asymmetric-jwt-signing.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="viplab-frontend">ViPLab Frontend</h1>
-<p>Here there will be screenshots and descriptions of the grafical user interface of ViPLab...</p>
+<h1 id="use-asymmetric-jwt-signing">Use asymmetric JWT signing</h1>
+<ul>
+<li>Status: accepted</li>
+<li>Deciders: Leon Kiefer, Per Pascal Seeland</li>
+<li>Date: 2020-05-11</li>
+</ul>
+<p>Technical Story: https://github.com/VirtualProgrammingLab/viplab-websocket-api/issues/11</p>
+<h2 id="context-and-problem-statement">Context and Problem Statement</h2>
+<p>When using JSON Web Tokens generating signatures and verifying them is an important task.
+JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA or ECDSA.
+When implementing JWTs one must decide which method to use.</p>
+<h2 id="decision-drivers">Decision Drivers</h2>
+<ul>
+<li>Multi tenant support with own keys for each tenant</li>
+</ul>
+<h2 id="considered-options">Considered Options</h2>
+<ul>
+<li>Asymmetric JWT signing</li>
+<li>Symmetric JWT signing</li>
+</ul>
+<h2 id="decision-outcome">Decision Outcome</h2>
+<p>Chosen option: "Asymmetric JWT signing", because it the only option which allow to use different keys for different tenants.</p>
+<h3 id="positive-consequences">Positive Consequences</h3>
+<ul>
+<li>multiple keys are supported</li>
+</ul>
+<h3 id="negative-consequences">Negative Consequences</h3>
+<ul>
+<li>complex management of keys</li>
+</ul>
+<h2 id="pros-and-cons-of-the-options">Pros and Cons of the Options</h2>
+<h3 id="asymmetric-jwt-signing">Asymmetric JWT signing</h3>
+<p>A RSA or ECDSA key pair is used for signing and verification.
+The JWTs signed by the external services using their own private key.
+Each private/public key pair has a key id and the public key is added as known key to the websocket-api.
+The websocket-api uses the key id of the JWT to find the corresponding known public and use it to validate the JWT Token signature.</p>
+<ul>
+<li>Good, because multiple tenants can use the same websocket-api service with different keys</li>
+<li>Good, because adding or revoking of single tenant key is possible</li>
+<li>Bad, because setup of the private and public keys is complicated</li>
+<li>Bad, because multiple keys must be managed</li>
+</ul>
+<h3 id="symmetric-jwt-signing">Symmetric JWT signing</h3>
+<p>The HMAC algorithm with a shared secret is used for signing and verification.
+All the external services must know the shared secret of the websocket-api to generate valid JWTs.
+The websocket-api use it secret to validate all JWTs.</p>
+<ul>
+<li>Good, because implementation very simple</li>
+<li>Good, because only a simple secret (string) must be managed</li>
+<li>Bad, because all tenants use the same shared secret</li>
+<li>Bad, because changing the secret require changes to all tenants</li>
+</ul>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="../0001-use-json-web-tokens/">ADR-0001</a></li>
+</ul>
 
               
             </article>
@@ -934,7 +1184,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../tutorial/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tutorial" rel="prev">
+        <a href="../0003-transfere-hash-in-jwt-claim/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ADR-0003" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -943,20 +1193,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Tutorial
+              ADR-0003
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../viplab3.0/" class="md-footer__link md-footer__link--next" aria-label="Next: Developer Guide" rel="next">
+        <a href="../versioning/" class="md-footer__link md-footer__link--next" aria-label="Next: Versioning" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Developer Guide
+              Versioning
             </div>
           </div>
           <div class="md-footer__button md-icon">
