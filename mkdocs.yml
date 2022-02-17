@@ -41,9 +41,14 @@ theme:
 nav:
   - index.md
   - Admin Guide: 
-    - integration/index.md
+    - admin/index.md
+    - Architecture: admin/architecture.md
+    - Docker: admin/docker.md
+    - Interface to Websocket API: admin/interface.md
+    - Integration: admin/integration.md
   - User Guide: 
     - viplab-frontend/index.md
+    - ViPLab In ILIAS: viplab-frontend/ilias.md
     - Tutorial: viplab-frontend/tutorial.md
     - Frontend: viplab-frontend/frontend.md
   - Developer Guide: 
