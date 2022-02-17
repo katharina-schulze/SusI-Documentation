@@ -5,6 +5,5 @@ You have done some research and want to make the code you created available to o
 For this, ViPLab was integrated into your institutions management system for research data (see Chapter on [Integration](../integration/index.md))
 
 ## Steps
-1. Create a Docker Image of your Research Software
+1. Create a Docker Container of your Research Software, that can be used by ViPLab
 2. Write a Computation Template
-3. 

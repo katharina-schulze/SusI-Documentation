@@ -1,5 +1,5 @@
-ViPLab 3.0
-========================
+# Developer Guide
+
 Virtual programming laboratory for education and teaching at universities as well as executing docker images in the context of research data management. Clients (frontends) use the *websocket-api* to communicate to several backends (computation clients) working in a cluster. 
 
 A _computation client_ instance supports one or more *language environments* (e.g. 'C', 'Matlab').
@@ -27,7 +27,7 @@ Describe who is sending which kind of message and gets what back
 
 Versioning rules
 ----------------
-[Versioning rules](versioning.md)
+[Versioning rules](../adr/versioning.md)
 
 Long living JSON messages
 --------------
