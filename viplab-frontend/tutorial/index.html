@@ -74,9 +74,7 @@
     
       
 
-  
-
-<header class="md-header md-header--lifted" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="ViPLab" class="md-header__button md-logo" aria-label="ViPLab" data-md-component="logo">
       
@@ -175,116 +173,13 @@
     
   </nav>
   
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
-      Welcome to the ViPLab Documentation
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../admin/" class="md-tabs__link">
-        Admin Guide
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
-        User Guide
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../viplab3.0/" class="md-tabs__link">
-        Developer Guide
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../adr/" class="md-tabs__link">
-        ADRs
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../history/" class="md-tabs__link">
-        History
-      </a>
-    </li>
-  
-
-      
-    </ul>
-  </div>
-</nav>
-    
-  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -297,10 +192,8 @@
                   <div class="md-sidebar__inner">
                     
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="ViPLab" class="md-nav__button md-logo" aria-label="ViPLab" data-md-component="logo">
       
@@ -350,35 +243,15 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
-        
-          
-            
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
       
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../admin/">Admin Guide</a>
-          
-            <label for="__nav_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_2">
+          Admin Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Admin Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
@@ -387,6 +260,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/" class="md-nav__link">
+        Admin Guide
+      </a>
+    </li>
+  
+
             
           
             
@@ -468,29 +353,11 @@
       
       
       
-        
-          
-            
-          
-        
-          
-        
-          
-        
-          
-        
       
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../">User Guide</a>
-          
-            <label for="__nav_3">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_3">
+          User Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="User Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
@@ -499,6 +366,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        User Guide
+      </a>
+    </li>
+  
+
             
           
             
@@ -566,6 +445,40 @@
     Steps
   </a>
   
+    <nav class="md-nav" aria-label="Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#easy-example" class="md-nav__link">
+    Easy Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-docker-container-of-your-research-software-that-can-be-used-by-viplab" class="md-nav__link">
+    1. Create a Docker Container of your Research Software, that can be used by ViPLab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-write-a-computation-template" class="md-nav__link">
+    2. Write a Computation Template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-see-the-result-in-the-viplab-frontend" class="md-nav__link">
+    3. See the Result in the ViPLab Frontend
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -608,37 +521,15 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
-        
-          
-            
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
       
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../viplab3.0/">Developer Guide</a>
-          
-            <label for="__nav_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_4">
+          Developer Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Developer Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
@@ -647,6 +538,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viplab3.0/" class="md-nav__link">
+        Developer Guide
+      </a>
+    </li>
+  
+
             
           
             
@@ -736,39 +639,15 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
-        
-          
-            
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
       
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../adr/">ADRs</a>
-          
-            <label for="__nav_5">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_5">
+          ADRs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="ADRs" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
@@ -777,6 +656,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/" class="md-nav__link">
+        Architectural Decision Log
+      </a>
+    </li>
+  
+
             
           
             
@@ -880,23 +771,15 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       
       
-        
-          
-            
-          
-        
       
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../history/">History</a>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_6">
+          History
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="History" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
@@ -905,6 +788,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        History
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -951,6 +846,40 @@
     Steps
   </a>
   
+    <nav class="md-nav" aria-label="Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#easy-example" class="md-nav__link">
+    Easy Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-docker-container-of-your-research-software-that-can-be-used-by-viplab" class="md-nav__link">
+    1. Create a Docker Container of your Research Software, that can be used by ViPLab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-write-a-computation-template" class="md-nav__link">
+    2. Write a Computation Template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-see-the-result-in-the-viplab-frontend" class="md-nav__link">
+    3. See the Result in the ViPLab Frontend
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -974,21 +903,111 @@
 <h2 id="situation">Situation</h2>
 <p>You have done some research and want to make the code you created available to other scientists, so they can take a better look at your results. 
 For this, ViPLab was integrated into your institutions management system for research data (see Chapter on <a href="../integration/index.md">Integration</a>)</p>
+<hr />
 <h2 id="steps">Steps</h2>
 <ol>
 <li>Create a Docker Container of your Research Software, that can be used by ViPLab</li>
 <li>Write a Computation Template</li>
+<li>See the Result in the ViPLab Frontend</li>
 </ol>
+<hr />
+<h3 id="easy-example">Easy Example</h3>
+<p>For this Tutorial we have created an easy example code, that just outputs information that was passed to the script using an INI-file.  </p>
+<p>The bash scripts looks like this: 
+<div class="highlight"><span class="filename">run.sh</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">source</span> &lt;<span class="o">(</span><span class="nv">grep</span> <span class="o">=</span> /data/shared/params.ini<span class="o">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">echo</span> <span class="s2">&quot;Your name is </span><span class="nv">$name</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">echo</span> <span class="s2">&quot;Your current age: </span><span class="nv">$age</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">echo</span> <span class="s2">&quot;Your Christmas Wish is: </span><span class="nv">$christmasWish</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">echo</span> <span class="s2">&quot;How hot do you like to drink your coffee? </span><span class="nv">$coffeeTemperature</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">echo</span> <span class="s2">&quot;You like: </span><span class="nv">$likedThings</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">echo</span> <span class="s2">&quot;Your favorite Programming Language is </span><span class="nv">$favoritePL</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nb">echo</span> <span class="s2">&quot;You look in the fridge: </span><span class="nv">$fridge</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nb">echo</span> <span class="s2">&quot;You would dance in the kitchen to: </span><span class="nv">$dancing</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">echo</span> <span class="s2">&quot;You dislike: </span><span class="nv">$dislikedThings</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nb">echo</span> <span class="s2">&quot;Your three random numers are: </span><span class="nv">$randomNumbers</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nb">echo</span> <span class="s2">&quot;The Code you entered:&quot;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">echo</span> <span class="sb">`</span><span class="nb">echo</span> <span class="nv">$codeSnippet</span> <span class="p">|</span> base64 -i --decode<span class="sb">`</span>
+</code></pre></div></p>
+<p>An example for the input-file called params.ini could look like this: 
+<div class="highlight"><span class="filename">params.ini</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">[coffee preference]</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="na">coffeeTemperature</span><span class="o">=</span><span class="s">75</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">[about you]</span><span class="w"></span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="na">likedThings</span><span class="o">=</span><span class="s">programming,music,books</span><span class="w"></span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="na">favoritePL</span><span class="o">=</span><span class="s">Java</span><span class="w"></span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="na">fridge</span><span class="o">=</span><span class="s">never</span><span class="w"></span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="na">dancing</span><span class="o">=</span><span class="s">&quot;Last Christmas&quot;</span><span class="w"></span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="na">dislikedThings</span><span class="o">=</span><span class="s">Spiders</span><span class="w"></span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="na">randomNumbers</span><span class="o">=</span><span class="s">25,50,75</span><span class="w"></span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="na">name</span><span class="o">=</span><span class="s">Kathryn</span><span class="w"></span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="na">christmasWish</span><span class="o">=</span><span class="s">&quot;COFFEE! In that nebula!&quot;</span><span class="w"></span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="na">age</span><span class="o">=</span><span class="s">36</span><span class="w"></span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="na">codeSnippet</span><span class="o">=</span><span class="s">&quot;aW50IG1haW4oaW50IGFyZ2MsIGNoYXIgKiphcmd2KSB7IC8vIFByaW50ICdIZWxsbyBXb3JsZCcgfQ==&quot;</span><span class="w"></span>
+</code></pre></div></p>
+<div class="admonition tip inline end">
+<p class="admonition-title">Tip</p>
+<p>Depending on which OS you are using you might have to execute <code>chmod +x run.sh</code> first</p>
+</div>
+<p>Calling...
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>./run.sh 
+</code></pre></div></p>
+<p>... will result in the following output on the console: </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="go">Your name is Kathryn</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="go">Your current age: 36</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="go">Your Christmas Wish is: COFFEE! In that nebula!</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="go">How hot do you like to drink your coffee? 75</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="go">You like: programming,music,books</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="go">Your favorite Programming Language is Java</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="go">You look in the fridge: never</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="go">You would dance in the kitchen to: Last Christmas</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="go">You dislike: Spiders</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="go">Your three random numers are: 25,50,75</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="go">The Code you entered:</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="go">int main(int argc, char **argv) { // Print &#39;Hello World&#39; }</span>
+</code></pre></div>
+<h3 id="1-create-a-docker-container-of-your-research-software-that-can-be-used-by-viplab">1. Create a Docker Container of your Research Software, that can be used by ViPLab</h3>
+<p>If you are not familliar with Docker, follow this link to the official website to find the right Download for your system and take a look at the docs: <a href="https://www.docker.com/">Docker Website</a>.
+There is also a <a href="https://docs.docker.com/get-started/">first introduction to Docker</a> available, with a few explainations and an image to try out. 
+To create and runs your first Docker sample application, you can follow this <a href="https://docs.docker.com/get-started/02_our_app/">Tutorial</a>. </p>
+<p>After you set up Docker, you can start writing a Dockerfile for your research software. 
+The file is placed in the same folder as your code. </p>
+<p>For the example code above, the Dockerfile would look like this: </p>
+<div class="highlight"><span class="filename">Dockerfile</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">ubuntu:latest</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">COPY</span><span class="w"> </span>run.sh /data/bin/run.sh
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">COPY</span><span class="w"> </span>params.ini /data/shared/params.ini
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">RUN</span><span class="w"> </span>chmod +x /data/bin/run.sh
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">ENTRYPOINT</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/data/bin/run.sh&quot;</span><span class="p">]</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Explaination of the Dockerfile</p>
+<p>First the latest Ubuntu-Docker-Image is selected as a starting point. After this, our files are copied to specific folders inside the container. Then <code>run.sh</code> is made executable using <code>chmod</code> before being run using the last command. </p>
+</div>
+<p>After creating the file, open a terminal and go to the directory where your files are located, if you haven't done so, yet. 
+To build the container image, run the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker build -t hello-world-image .
+</code></pre></div>
+<p>After the build is finished, you can now start the container using...</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker run hello-world-image
+</code></pre></div>
+<p>... after which you will see the output shown in section <a href="#easy-example">Easy Example</a>. </p>
+<h3 id="2-write-a-computation-template">2. Write a Computation Template</h3>
+<p><em>TODO: GUI CT Creator</em></p>
+<p>For more detail on the structure of the Computation Template, take a look at the <a href="../../viplab3.0/computation_template/">Developer Guide</a>.</p>
+<h3 id="3-see-the-result-in-the-viplab-frontend">3. See the Result in the ViPLab Frontend</h3>
+<p>Using the above created Computation Template, the Frontend will look like this: </p>
+<figure>
+<p><img alt="ViPLab Frontend showing the Example" src="../../images/frontend-example-mustache.png" />
+  </p>
+<figcaption>ViPLab Frontend showing the Example</figcaption>
+</figure>
+<p>After clicking the Play-Button, the Container will be executed by the Frontend and the Result will be returned, as seen in the Image below.</p>
+<p><em>TODO: Image of Result displayed in Frontend</em></p>
 
               
             </article>
           </div>
         </div>
-        
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
-            Back to top
-          </a>
         
       </main>
       
@@ -1053,7 +1072,7 @@ For this, ViPLab was integrated into your institutions management system for res
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "toc.follow", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
     
     
       <script src="../../assets/javascripts/bundle.5a9542cf.min.js"></script>
