@@ -22,11 +22,15 @@ The documentation contains five main parts:
 - Support of the following Programming Languages:
     - C
     - ...
-- Displaying the following File-Types:
+- Execute 
+    - Docker-Containers
+    - ...
+- Displaying the following File-Types in the Result:
     - VTU & VTK
     - CSV
     - PNG
     - ViPLab Graphics Formats
+- Specify whether a certain File-Type should be displayed in the Result
 - Configure Parameters using GUI-Elements, like
     - Checkboxes
     - Radio Buttons
@@ -35,3 +39,5 @@ The documentation contains five main parts:
     - Input Fields
     - Dropdowns
     - Editors
+- Show Two-Column-View or One-Column-View (Minimize / Maximize)
+- Download and Uplaod Backups
