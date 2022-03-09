@@ -3,7 +3,7 @@
 ## General Architecture
 
 <figure markdown>
-  ![ViPLab Architecture](../images/ViPLab-Architecture.png)
+  ![ViPLab Architecture](../images/ViPLab-Architecture.svg)
   <figcaption>ViPLab Architecture: General Overview</figcaption>
 </figure>
 
