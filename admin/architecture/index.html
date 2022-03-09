@@ -461,6 +461,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ilias-plugin" class="md-nav__link">
+    ILIAS Plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#darus-viplab-extension-viplab-connector-integration-into-darus" class="md-nav__link">
+    DaRUS-ViPLab Extension: ViPLab-Connector - Integration into DaRUS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#websocket-api" class="md-nav__link">
     Websocket API
   </a>
@@ -482,8 +496,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    Docker
+  <a href="#correction-server" class="md-nav__link">
+    Correction Server
   </a>
   
 </li>
@@ -1018,6 +1032,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ilias-plugin" class="md-nav__link">
+    ILIAS Plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#darus-viplab-extension-viplab-connector-integration-into-darus" class="md-nav__link">
+    DaRUS-ViPLab Extension: ViPLab-Connector - Integration into DaRUS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#websocket-api" class="md-nav__link">
     Websocket API
   </a>
@@ -1039,8 +1067,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    Docker
+  <a href="#correction-server" class="md-nav__link">
+    Correction Server
   </a>
   
 </li>
@@ -1069,8 +1097,17 @@
 
 
 <h1 id="architecture">Architecture</h1>
+<figure>
+<p><img alt="ViPLab Architecture" src="../../images/ViPLab-Architecture.png" />
+  </p>
+<figcaption>ViPLab Architecture: General Overview</figcaption>
+</figure>
 <h2 id="using-ilias">Using ILIAS</h2>
-<p>Should the ILIAS-Plugin be described too?</p>
+<figure>
+<p><img alt="ViPLab Architecture" src="../../images/viplab_arichtektur_modified.png" />
+  </p>
+<figcaption>ViPLab Architecture: ILIAS Plugin</figcaption>
+</figure>
 <h2 id="using-a-research-management-software-like-darus">Using a Research Management Software (like DaRUS)</h2>
 <figure>
 <p><img alt="ViPLab Architecture" src="../../images/viplab_arichtektur_susi_v2.png" />
@@ -1079,10 +1116,49 @@
 </figure>
 <h2 id="components">Components</h2>
 <h3 id="frontend">Frontend</h3>
+<p>The <em>ViPLab Frontend</em> is a browser-based web application. 
+It was developed using the JavaScript Framework Vue.js. 
+The user can enter his/her input using the graphical interface. 
+If the user sends the input, a JSON message is generated and sent to the Websocket API.</p>
+<p>An overview with descriptions of the Frontend can be found here: <a href="../../viplab-frontend/frontend/">ViPLab Frontend</a>.</p>
+<div class="admonition error">
+<p class="admonition-title">TODO</p>
+<p>Publish Repo on GitHub and add Link to it</p>
+</div>
+<h3 id="ilias-plugin">ILIAS Plugin</h3>
+<div class="admonition error">
+<p class="admonition-title">TODO</p>
+<p>Should the ILIAS Plugin be described, too?</p>
+</div>
+<h3 id="darus-viplab-extension-viplab-connector-integration-into-darus">DaRUS-ViPLab Extension: ViPLab-Connector - Integration into DaRUS</h3>
+<div class="admonition error">
+<p class="admonition-title">TODO</p>
+<p>Should the Extension be described here?</p>
+</div>
+<p>Landingpage out of DaRUS. 
+It communicates with the Websocket API and starts the Frontend.</p>
 <h3 id="websocket-api">Websocket API</h3>
+<p>The <em>Websocket-Api</em> can be used by the clients to interact with ViPLab. 
+For this it is necessary that th clients authenticate and autorize themselves using JSON Web Tokens (JWTs). 
+Following this process, messages can be exchanged, to start a computation using ViPLab. 
+To enable the computation, all necessary information has to be part of the Websocket message. 
+The messages sent are JSON messages, which are partly described in the <a href="../../viplab3.0/">Developer Guide</a>. 
+Once the result was computed, the client is informed. </p>
+<p>The Repository containing the code of the Websocket API can be found on <a href="https://github.com/VirtualProgrammingLab/viplab-websocket-api">Git</a> and is written in Java. </p>
 <h3 id="ecs">ECS</h3>
+<p><em>ECS</em> (eLearning Community Server) is used as Middleware. 
+It is used to decouple the calls from the <em>API</em> to enable asynchronous processing in the <em>Backends</em>. 
+<em>ECS</em> is only used for asynchronous communication, not as Database. 
+Only the Backends and the API have access to it. </p>
+<p>The code can be found <a href="https://git.freeit.de/ecs4">here</a>.</p>
 <h3 id="backend">Backend</h3>
-<h3 id="docker">Docker</h3>
+<p>The ViPLab <em>Backend</em> is based on Python. 
+It is used to evaluate the input made using the Frontend. 
+For this the specified code or Docker-Container is executed and the result is reported back to the client via the Websocket API.</p>
+<p>The code can be found <a href="https://github.com/VirtualProgrammingLab/ViPLab-Backend">here</a>.</p>
+<h3 id="correction-server">Correction Server</h3>
+<p>The <em>Correction Server</em> is responsible for the correction of exercises. </p>
+<p>Click <a href="https://git.freeit.de/vipeval">here</a> to find the code and more information. </p>
 
               
             </article>
