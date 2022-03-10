@@ -1,7 +1,44 @@
 # Integration
 
-Here you can find links to repositories, where ViPLab has been integrated. You can take a look at these examples and either use them or create your own integration.
-
-[Integration of ViPLab into DaRUS](https://example.com/)
+Here you can find different possibilities to integrate ViPlab. You can take a look at these examples and either use them or create your own integration.
 
 *More will be added in the future...*
+
+## Integration into ILIAS
+
+<figure markdown>
+  ![ViPLab Architecture](../images/viplab_arichtektur_modified.png)
+  <figcaption>ViPLab Architecture: ILIAS Plugin</figcaption>
+</figure>
+
+### Additional Components
+
+#### ILIAS Plugin
+
+!!! error "TODO"
+    Should the ILIAS Plugin be described, too?
+
+!!! error TODO
+        Correct Link: [ILIAS Plugin](https://example.com/)
+
+#### Correction Server
+The *Correction Server* is responsible for the correction of exercises. 
+
+Click [here](https://git.freeit.de/vipeval) to find the code and more information. 
+
+## Integration into a Research Management Software (like DaRUS)
+
+<figure markdown>
+  ![ViPLab Architecture](../images/viplab_arichtektur_susi_v2.png)
+  <figcaption>ViPLab Architecture: Integration into DaRUS</figcaption>
+</figure>
+
+### Additional Components
+
+#### DaRUS-ViPLab Extension: ViPLab-Connector - Integration into DaRUS
+
+Landingpage out of DaRUS. 
+It communicates with the Websocket API and starts the Frontend.
+
+!!! error TODO
+        Correct Link: [Integration of ViPLab into DaRUS](https://example.com/)

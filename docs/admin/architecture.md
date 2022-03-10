@@ -52,39 +52,3 @@ It is used to evaluate the input made using the Frontend.
 For this the specified code or Docker-Container is executed and the result is reported back to the client via the Websocket API.
 
 The code can be found [here](https://github.com/VirtualProgrammingLab/ViPLab-Backend).
-
-## Using ILIAS
-
-<figure markdown>
-  ![ViPLab Architecture](../images/viplab_arichtektur_modified.png)
-  <figcaption>ViPLab Architecture: ILIAS Plugin</figcaption>
-</figure>
-
-### Additional Components
-
-#### ILIAS Plugin
-
-!!! error "TODO"
-    Should the ILIAS Plugin be described, too?
-
-#### Correction Server
-The *Correction Server* is responsible for the correction of exercises. 
-
-Click [here](https://git.freeit.de/vipeval) to find the code and more information. 
-
-## Using a Research Management Software (like DaRUS)
-
-<figure markdown>
-  ![ViPLab Architecture](../images/viplab_arichtektur_susi_v2.png)
-  <figcaption>ViPLab Architecture: Integration into DaRUS</figcaption>
-</figure>
-
-### Additional Components
-
-#### DaRUS-ViPLab Extension: ViPLab-Connector - Integration into DaRUS
-
-!!! error "TODO"
-    Should the Extension be described here?
-
-Landingpage out of DaRUS. 
-It communicates with the Websocket API and starts the Frontend.
