@@ -30,6 +30,10 @@ To enable the computation, all necessary information has to be part of the Webso
 The messages sent are JSON messages, which are partly described in the [Developer Guide](../viplab3.0/index.md). 
 Once the result was computed, the client is informed. 
 
+Additionally there is a Database, which is used to save Computations and their results. 
+But it is no durable location for saving user data. 
+The Backends have no access to this DB, so all relevant information has to be sent to the Backends using the Middleware. 
+
 The Repository containing the code of the Websocket API can be found on [Git](https://github.com/VirtualProgrammingLab/viplab-websocket-api) and is written in Java. 
 
 #### ECS
