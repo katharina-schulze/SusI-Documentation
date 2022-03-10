@@ -52,17 +52,17 @@ nav:
     - Integration: admin/integration.md
     - Docker: admin/docker.md
   - User Guide: 
-    - viplab-frontend/index.md
-    - Tutorial: viplab-frontend/tutorial.md
-    - Frontend: viplab-frontend/frontend.md
-    - ViPLab In ILIAS: viplab-frontend/ilias.md
+    - user/index.md
+    - Tutorial: user/tutorial.md
+    - Frontend: user/frontend.md
+    - ViPLab In ILIAS: user/ilias.md
   - Developer Guide: 
-    - viplab3.0/index.md
-    - Computation Template: viplab3.0/computation_template.md
-    - Computation Task: viplab3.0/computation_task.md
-    - Computation: viplab3.0/computation.md
-    - Computation Result: viplab3.0/computation_result.md
-    - System Status: viplab3.0/system_status.md
+    - developer/index.md
+    - Computation Template: developer/computation_template.md
+    - Computation Task: developer/computation_task.md
+    - Computation: developer/computation.md
+    - Computation Result: developer/computation_result.md
+    - System Status: developer/system_status.md
   - ADRs:
     - adr/index.md
     - ADR-0000: adr/0000-use-markdown-architectural-decision-records.md

@@ -117,7 +117,7 @@ docker run hello-world-image
 
 *TODO: GUI CT Creator*
 
-For more detail on the structure of the Computation Template, take a look at the [Developer Guide](../viplab3.0/computation_template.md).
+For more detail on the structure of the Computation Template, take a look at the [Developer Guide](../developer/computation_template.md).
 
 ### 3. See the Result in the ViPLab Frontend
 

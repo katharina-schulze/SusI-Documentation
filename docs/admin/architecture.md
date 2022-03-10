@@ -16,7 +16,7 @@ The user can enter his/her input using the graphical interface.
 If the user sends the input, a JSON message is generated and sent to the Websocket API.
 
 
-An overview with descriptions of the Frontend can be found here: [ViPLab Frontend](../viplab-frontend/frontend.md).
+An overview with descriptions of the Frontend can be found here: [ViPLab Frontend](../user/frontend.md).
 
 !!! error "TODO"
     Publish Repo on GitHub and add Link to it
@@ -27,7 +27,7 @@ The *Websocket-Api* can be used by the clients to interact with ViPLab.
 For this it is necessary that th clients authenticate and autorize themselves using JSON Web Tokens (JWTs). 
 Following this process, messages can be exchanged, to start a computation using ViPLab. 
 To enable the computation, all necessary information has to be part of the Websocket message. 
-The messages sent are JSON messages, which are partly described in the [Developer Guide](../viplab3.0/index.md). 
+The messages sent are JSON messages, which are partly described in the [Developer Guide](../developer/index.md). 
 Once the result was computed, the client is informed. 
 
 Additionally there is a Database, which is used to save Computations and their results. 

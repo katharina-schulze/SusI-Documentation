@@ -51,7 +51,7 @@ This message contains authentication tokens in terms of JWTs, that are provided 
 
 #### create-computation
 
-Message to create a new [Computation](../viplab3.0/computation.md) from a [Computation Template](../viplab3.0/computation_template.md) and a [Computation Task](../viplab3.0/computation_task.md). 
+Message to create a new [Computation](../developer/computation.md) from a [Computation Template](../developer/computation_template.md) and a [Computation Task](../developer/computation_task.md). 
 This Computation is sent back to the browser using a [computation message](#computation)
 
 #### subscribe
