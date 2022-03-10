@@ -51,6 +51,7 @@ nav:
     - Interface to Websocket API: admin/interface.md
     - Integration: admin/integration.md
     - Docker: admin/docker.md
+    - Setup: admin/setup.md
   - User Guide: 
     - user/index.md
     - Tutorial: user/tutorial.md

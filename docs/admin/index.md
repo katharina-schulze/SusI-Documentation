@@ -6,3 +6,4 @@ In the Admin Guide you can find Information about:
 - [Docker](docker.md)
 - [Interface to Websocket API](interface.md)
 - [Integration](integration.md)
+- [Setup](setup.md)
