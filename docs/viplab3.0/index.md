@@ -21,9 +21,20 @@ Terms (ViPLab specific)
 * **frontend launcher** entrypoints for the user, that start the frontend, e.g. viplab-question-plugin-for-ilias or dataverse-viplab-extension
 * **computation** a CC computes a *Result* of a *Computation Task* complementing a *Computation Template* (*Computation Task* and - referenced - *Computation Template* being input, *Result* output of computation).
 
-Flow of information
+Flow of Information
 -------------------
-Describe who is sending which kind of message and gets what back
+
+<figure markdown>
+  ![ViPLab Sequence Diagram](../images/viplab-flow.png)
+  <figcaption>ViPLab Sequence Diagram</figcaption>
+</figure>
+
+!!! error "TODO"
+        Describe who is sending which kind of message and gets what back
+
+Development Help
+-------------
+For further developing ViPLab or related services, you can use the [local development environment based on Docker](https://github.com/VirtualProgrammingLab/viplab-docker-dev-env).
 
 Versioning rules
 ----------------
