@@ -48,20 +48,20 @@ nav:
   - Admin Guide: 
     - admin/index.md
     - Architecture: admin/architecture.md
-    - Docker: admin/docker.md
     - Interface to Websocket API: admin/interface.md
     - Integration: admin/integration.md
+    - Docker: admin/docker.md
   - User Guide: 
     - viplab-frontend/index.md
-    - ViPLab In ILIAS: viplab-frontend/ilias.md
     - Tutorial: viplab-frontend/tutorial.md
     - Frontend: viplab-frontend/frontend.md
+    - ViPLab In ILIAS: viplab-frontend/ilias.md
   - Developer Guide: 
     - viplab3.0/index.md
+    - Computation Template: viplab3.0/computation_template.md
+    - Computation Task: viplab3.0/computation_task.md
     - Computation: viplab3.0/computation.md
     - Computation Result: viplab3.0/computation_result.md
-    - Computation Task: viplab3.0/computation_task.md
-    - Computation Template: viplab3.0/computation_template.md
     - System Status: viplab3.0/system_status.md
   - ADRs:
     - adr/index.md
