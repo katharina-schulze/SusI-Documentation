@@ -10,7 +10,7 @@ The virtual programming lab ViPLab is a browser-based programming environment. I
 
 The documentation contains five main parts:
 
-- [ViPLab Admin Guide](integration/index.md) 
+- [ViPLab Admin Guide](admin/index.md) 
 - [ViPLab User Guide](user/index.md)
 - [ViPLab Developer Guide](developer/index.md) 
 - [Architectural Decision Logs](adr/index.md)
