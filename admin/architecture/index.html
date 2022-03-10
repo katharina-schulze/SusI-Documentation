@@ -1223,6 +1223,9 @@ Following this process, messages can be exchanged, to start a computation using 
 To enable the computation, all necessary information has to be part of the Websocket message. 
 The messages sent are JSON messages, which are partly described in the <a href="../../viplab3.0/">Developer Guide</a>. 
 Once the result was computed, the client is informed. </p>
+<p>Additionally there is a Database, which is used to save Computations and their results. 
+But it is no durable location for saving user data. 
+The Backends have no access to this DB, so all relevant information has to be sent to the Backends using the Middleware. </p>
 <p>The Repository containing the code of the Websocket API can be found on <a href="https://github.com/VirtualProgrammingLab/viplab-websocket-api">Git</a> and is written in Java. </p>
 <h4 id="ecs">ECS</h4>
 <p><em>ECS</em> (eLearning Community Server) is used as Middleware. 
