@@ -21,7 +21,7 @@ For the last two lines, some example output is copied inside the docker containe
 The bash scripts looks like this: 
 ``` sh title="run.sh"
 #!/bin/bash
-source <(grep = $1)
+source <(grep = $1 | tr -d ' ')
 echo "Your name is $name"
 echo "Your current age: $age"
 echo "Your Christmas Wish is: $christmasWish"
@@ -47,13 +47,13 @@ coffeeTemperature=75
 likedThings=programming,music,books
 favoritePL=Java
 fridge=never
-dancing="Last Christmas"
+dancing=Last Christmas
 dislikedThings=Spiders
 randomNumbers=25,50,75
 name=Kathryn
-christmasWish="COFFEE! In that nebula!"
+christmasWish=COFFEE! In that nebula!
 age=36
-codeSnippet="aW50IG1haW4oaW50IGFyZ2MsIGNoYXIgKiphcmd2KSB7IC8vIFByaW50ICdIZWxsbyBXb3JsZCcgfQ=="
+codeSnippet=aW50IG1haW4oaW50IGFyZ2MsIGNoYXIgKiphcmd2KSB7IC8vIFByaW50ICdIZWxsbyBXb3JsZCcgfQ==
 ```
 
 !!! tip inline end
@@ -69,12 +69,12 @@ Calling...
 ``` console
 Your name is Kathryn
 Your current age: 36
-Your Christmas Wish is: COFFEE! In that nebula!
+Your Christmas Wish is: COFFEE!Inthatnebula!
 How hot do you like to drink your coffee? 75
 You like: programming,music,books
 Your favorite Programming Language is Java
 You look in the fridge: never
-You would dance in the kitchen to: Last Christmas
+You would dance in the kitchen to: LastChristmas
 You dislike: Spiders
 Your three random numers are: 25,50,75
 The Code you entered:
@@ -404,7 +404,7 @@ Here, you can see the Copmutation Template asking for the input of the user:
     }
   ], 
   "configuration" :
-    { "resources.image"  : "viplab-example-image",
+    { "resources.image"  : "name://viplab-example-image",
       "resources.volume" : "/data/shared",
       "resources.memory" : "1g",
       "resources.numCPUs" : 1
