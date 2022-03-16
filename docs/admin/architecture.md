@@ -36,19 +36,18 @@ The Backends have no access to this DB, so all relevant information has to be se
 
 The Repository containing the code of the Websocket API can be found on [Git](https://github.com/VirtualProgrammingLab/viplab-websocket-api) and is written in Java. 
 
-#### ECS
+#### Middleware
 
-*ECS* (eLearning Community Server) is used as Middleware. 
-It is used to decouple the calls from the *API* to enable asynchronous processing in the *Backends*. 
-*ECS* is only used for asynchronous communication, not as Database. 
-Only the Backends and the API have access to it. 
-
-The code can be found [here](https://git.freeit.de/ecs4).
+As *Middleware* [Apache ActiveMQ](https://activemq.apache.org/) is used. 
+To be more precise [ActiveMQ Artemis](https://activemq.apache.org/components/artemis/documentation/). 
+Apache ActiveMQ Artemis enables asynchronous messaging between the Websocket API and the Backend and thus also asynchonous processing in the Backend(s).
 
 #### Backend
 
 The ViPLab *Backend* is based on Python. 
 It is used to evaluate the input made using the Frontend. 
-For this the specified code or Docker-Container is executed and the result is reported back to the client via the Websocket API.
+For this the specified Docker-Container is executed. 
+Alternatively, the code is executed inside a previously defined Container, e.g. C-Code is executed inside a Container that can run C-Code. 
+After that, the result is reported back to the client via ActiveMQ and the Websocket API.
 
 The code can be found [here](https://github.com/VirtualProgrammingLab/ViPLab-Backend).
