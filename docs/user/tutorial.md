@@ -134,7 +134,7 @@ Here, you can see the Copmutation Template asking for the input of the user:
     { 
       "displayName" : "Parameters Example",  
       "description" : "This is a 'Hello World' example showing the usage of parameters. Please introduce yourself so that the Hello World-Container can print your information...",
-      "viewer" : ["Image"]                                 
+      "viewer" : ["Image", "ParaView", "CSV"]                                 
     },
   "environment" : "Container", 
   "files" : 
