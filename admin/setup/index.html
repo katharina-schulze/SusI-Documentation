@@ -504,8 +504,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ecs" class="md-nav__link">
-    ECS
+  <a href="#apache-activemq-artemis" class="md-nav__link">
+    Apache ActiveMQ Artemis
   </a>
   
 </li>
@@ -985,8 +985,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ecs" class="md-nav__link">
-    ECS
+  <a href="#apache-activemq-artemis" class="md-nav__link">
+    Apache ActiveMQ Artemis
   </a>
   
 </li>
@@ -1031,37 +1031,10 @@ If you want to set it up...</p>
 </div>
 <h2 id="websocket-api">Websocket API</h2>
 <p>To set up the Websocket API for getting an interactive session with the ViPLab Service, follow the instructions found in the README of the <a href="https://github.com/VirtualProgrammingLab/viplab-websocket-api">viplab-websocket-api</a> Git-Repository.</p>
-<h2 id="ecs">ECS</h2>
-<p>You can find Code <a href="https://git.freeit.de/ecs4/">here</a>.</p>
-<p>To establish a new ECS, you use <a href="https://puppet.com/docs/puppet/6/puppet_overview.html">Puppet</a> to install nginx, mysql and set the ECS-Config. </p>
-<p>After that, use the Rake-Script to create the tables in the database:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>su - ecs -s /bin/bash
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>cd /srv/ecs/
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>export GEM_PATH=/usr/lib64/ruby/gems/2.1.0:/srv/ecs/vendor/ruby/2.1.0 
-</code></pre></div>
-<p>And depending on the server: </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>export RACK_ENV=production
-</code></pre></div>
-<p>or: </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>export RACK_ENV=development 
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>bin/rake db:setup
-</code></pre></div>
-<p>As of now (2018-02-16), the <a href="https://www.rubyguides.com/2019/02/ruby-rake/">Rake</a>-Script creates a table type that is too short for the body. 
-Because of that in the mysql-db, you should set it to <code>MEDIUMTEXT</code>instead of <code>TEXT</code>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ALTER TABLE `messages` CHANGE `body` `body` MEDIUMTEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL;
-</code></pre></div></p>
-<p>ECS-BD Migration (as Root):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cd /srv/ecs/
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>export GEM_PATH=/usr/lib64/ruby/gems/2.1.0:/srv/ecs/vendor/ruby/2.1.0 
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>bin/rake db:migrate RAILS_ENV=development
-</code></pre></div>
+<h2 id="apache-activemq-artemis">Apache ActiveMQ Artemis</h2>
+<p>Information on how to set up Artemis, can be found in the <a href="https://activemq.apache.org/components/artemis/documentation/">Docs</a>.</p>
 <div class="admonition error">
-<p class="admonition-title">TODO<p>Anleitung zur Einrichtung eines neuen ECS in Confluence?</p>
+<p class="admonition-title">TODO<p>Anleitung zur Einrichtung von ActiveMQ?</p>
 </p>
 </div>
 <h2 id="backends">Backends</h2>
