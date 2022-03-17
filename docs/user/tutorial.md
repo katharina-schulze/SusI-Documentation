@@ -412,7 +412,8 @@ Here, you can see the Copmutation Template asking for the input of the user:
 }
 ```
 
-*TODO: GUI CT Creator*
+!!! error "TODO"
+    GUI CT Creator
 
 For more detail on the structure of the Computation Template, take a look at the [Developer Guide](../developer/computation_template.md).
 
@@ -427,4 +428,5 @@ Using the above created Computation Template, the Frontend will look like this:
 
 After clicking the Play-Button, the Container will be executed by the Frontend and the Result will be returned, as seen in the Image below.
 
-*TODO: Image of Result displayed in Frontend*
+!!! error "TODO"
+    Image of Result displayed in Frontend
