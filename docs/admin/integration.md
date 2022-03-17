@@ -7,7 +7,7 @@ Here you can find different possibilities to integrate ViPlab. You can take a lo
 ## Integration into ILIAS
 
 <figure markdown>
-  ![ViPLab Architecture](../images/viplab_arichtektur_modified.png)
+  ![ViPLab Architecture](../images/Integration-ILIAS.svg)
   <figcaption>ViPLab Architecture: ILIAS Plugin</figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ Click [here](https://git.freeit.de/vipeval) to find the code and more informatio
 ## Integration into a Research Management Software (like DaRUS)
 
 <figure markdown>
-  ![ViPLab Architecture](../images/viplab_arichtektur_susi_v2.png)
+  ![ViPLab Architecture](../images/Integration-DaRUS.svg)
   <figcaption>ViPLab Architecture: Integration into DaRUS</figcaption>
 </figure>
 
