@@ -1,4 +1,6 @@
-# documentation
+# ViPLab Documentation
+
+![](https://github.com/KatLily-74656/SusI-Documentation/workflows/GitHubPages/badge.svg)
 
 to see the documentation in your browser type
 `mkdocs serve`
