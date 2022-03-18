@@ -1000,14 +1000,19 @@
 </ul>
 <h2 id="flow-of-information">Flow of Information</h2>
 <figure>
-<p><img alt="ViPLab Sequence Diagram" src="../images/viplab-flow.png" />
+<p><img alt="ViPLab Sequence Diagram" src="../images/ViPLab-Sequence-with-Websocket-API.svg" />
   </p>
 <figcaption>ViPLab Sequence Diagram</figcaption>
 </figure>
-<div class="admonition error">
-<p class="admonition-title">TODO<p>Describe who is sending which kind of message and gets what back</p>
-</p>
-</div>
+<p>After establishing a connection to the Websocket API, a JWT is sent for authentication. 
+This JWT is then verified by the Websocket API. 
+If it is valid, the Requestor can send a createComputation message to the Websocket API. 
+The message contains the Computaton Template and a Computation Task. 
+Receiving the message, the Websocket API verifies the Computation Template and combines the Template and the Task into a Computation. 
+Subsequently, a message is sent to ActiveMQ, to request the Result. 
+Additionally, the Computation is returned to the Requestor.<br />
+This message gets pushed to the Computation-Backend, which in turn computes a Result, that is sent to the Websocket API via ActiveMQ. 
+Before returning the Result to the initial Requestor, the Websocket API gets the Computation and stored the Result from/in its temporary Datastore. </p>
 <h2 id="development-help">Development Help</h2>
 <p>For further developing ViPLab or related services, you can use the <a href="https://github.com/VirtualProgrammingLab/viplab-docker-dev-env">local development environment based on Docker</a>.</p>
 <h2 id="versioning-rules">Versioning rules</h2>
