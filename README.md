@@ -2,7 +2,7 @@
 
 ![](https://github.com/KatLily-74656/SusI-Documentation/workflows/GitHubPages/badge.svg)
 
-![](https://github.com/KatLily-74656/SusI-Documentation/workflows/pages-build-deployment/badge.svg)
+[![pages-build-deployment](https://github.com/KatLily-74656/SusI-Documentation/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/KatLily-74656/SusI-Documentation/actions/workflows/pages/pages-build-deployment)
 
 to see the documentation in your browser type
 `mkdocs serve`
