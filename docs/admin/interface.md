@@ -49,6 +49,28 @@ This message contains authentication tokens in terms of JWTs, that are provided 
 }
 ```
 
+#### prepare-computation
+
+Message to inform the backend about the computation that is currently worked on.  
+The backend can then prepare for running the computation. 
+For example, if the value for environment in the [computation template](../developer/computation_template.md) is `docker`, the backend can prepare by already pulling the respective docker image.
+
+After preparation, an information is sent back to the browser using a [prepared computation message](#prepared-computation)
+
+``` json title="prepare-computation Message Example"
+{
+    "type": "prepare-computation",
+    "content": {
+        "template" : "eyJpZGVudGlmaWVyIjoiMTE0ODNmMjMtOTViZi00MjRhLTk4YTUtZWU1ODY4Yzg1YzNmIiw...",
+        "task" : {
+            "template" : "11483f23-95bf-424a-98a5-ee5868c85c3f",
+            "identifier" : "b547d5f0-9346-05c6-6bdd-8e32e50abc96",
+            "files" : [ ... ]
+        }
+    }
+}
+```
+
 #### create-computation
 
 Message to create a new [Computation](../developer/computation.md) from a [Computation Template](../developer/computation_template.md) and a [Computation Task](../developer/computation_task.md). 
@@ -126,6 +148,22 @@ This message is used to send a Computation back to the browser.
         "created": "2019-08-19T13:31:30+0200",
         "expires": "2019-08-19T16:31:30+0200",
         "status": "created"
+    }
+}
+```
+
+#### prepared-computation
+
+This message is used to signal, that preparation of the backend was successful.
+
+``` json title="prepared-computation Message Example"
+{
+    "type": "prepared-computation",
+    "content": {
+        "id": "20f32dc9-e43f-4a65-af8c-42412ed9d977",
+        "created": "2019-08-19T13:31:30+0200",
+        "expires": "2019-08-19T16:31:30+0200",
+        "status": "prepared"
     }
 }
 ```
