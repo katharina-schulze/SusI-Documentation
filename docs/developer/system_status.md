@@ -1,6 +1,6 @@
-# System Status JSON message
+# System Status JSON Message
 
-to inform frontend about computations in-preparation...
+To inform frontend about computations in-preparation.
 
 ## Example (informal)
 
@@ -15,7 +15,7 @@ to inform frontend about computations in-preparation...
 }
 ```
 
-### System Status JSON object
+### System Status JSON Object
 
 |Key            |Value Type |Opt / Must |Description |Comment |
 |---------------|-----------|-----------|------------|--------|
