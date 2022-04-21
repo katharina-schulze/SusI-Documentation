@@ -54,6 +54,43 @@ This message contains authentication tokens in terms of JWTs, that are provided 
 Message to create a new [Computation](../developer/computation.md) from a [Computation Template](../developer/computation_template.md) and a [Computation Task](../developer/computation_task.md). 
 This Computation is sent back to the browser using a [computation message](#computation)
 
+``` json title="create-computation Message Example"
+{
+    "type": "create-computation",
+    "content": {
+        "template" : "eyJpZGVudGlmaWVyIjoiMTE0ODNmMjMtOTViZi00MjRhLTk4YTUtZWU1ODY4Yzg1YzNmIiw...",
+        "task" : {
+            "template" : "11483f23-95bf-424a-98a5-ee5868c85c3f",
+            "identifier" : "b547d5f0-9346-05c6-6bdd-8e32e50abc96",
+            "files" : [ 
+                {
+                    "identifier" : "22483f42-95bf-984a-98a5-ee9485c85c3f",
+                    "parts" : [
+                        {
+                            "identifier": "f3fc4404-3529-4962-b252-47bc4ddd02a1",
+                            "content": "eyJfX3NsaWRlclNpbmdsZV9fIjoiNzUifQ"
+                        },
+                        {
+                            "identifier": "ceb051d8-b50c-4814-983a-b9d703cae0c6",
+                            "content": "eyJfX2NoZWNrYm94X18iOiJwcm9ncmFtbWluZyIsIl9fcmFkaW9CdXR0b25fXyI6IkphdmEiLCJfX2Ryb3Bkb3duU2luZ2xlX18iOiJuZXZlciIsIl9fZHJvcGRvd25NdWx0aXBsZV9fIjoiTGFzdCBDaHJpc3RtYXMiLCJfX3RvZ2dsZV9fIjoiU3BpZGVycyIsIl9fc2xpZGVyTXVsdGlwbGVfXyI6IjI1LDUwLDc1IiwiX19pbnB1dFRleHRXT01heGxlbmd0aF9fIjoiYmFzZTY0OmF3IiwiX19pbnB1dFRleHRXTWF4bGVuZ3RoX18iOiJiYXNlNjQ6ZHciLCJfX2lucHV0TnVtYmVyX18iOiIyNSJ9"
+                        }
+                    ]
+                },
+                {
+                    "identifier" : "22483f42-95bf-984a-98a5-ee9485c85c31",
+                    "parts" : [
+                        {
+                            "identifier": "f3fc4404-3529-4962-b252-47bc4ddd02a2",
+                            "content": "eyJfX2RlZmF1bHRfXyI6ImJhc2U2NDphVzUwSUcxaGFXNG9hVzUwSUdGeVoyTXNJR05vWVhJZ0tpcGhjbWQyS1NCN0lBMEtMeThnVUhKcGJuUWdKMGhsYkd4dklGZHZjbXhrSnlBTkNuMCJ9"
+                        },
+                    ]
+                }
+            ]
+        }
+    }
+}
+```
+
 #### subscribe
 
 Using this message, one can subscribe to different events. 
