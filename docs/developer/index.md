@@ -25,7 +25,7 @@ Flow of Information
 -------------------
 
 <figure markdown>
-  ![ViPLab Sequence Diagram](../images/ViPLab-Sequence-with-Websocket-API.svg)
+  ![ViPLab Sequence Diagram](../images/ViPLab-Sequence-with-Websocket-API.drawio.svg)
   <figcaption>ViPLab Sequence Diagram</figcaption>
 </figure>
 
