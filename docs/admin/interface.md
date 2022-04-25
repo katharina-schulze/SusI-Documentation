@@ -49,28 +49,6 @@ This message contains authentication tokens in terms of JWTs, that are provided 
 }
 ```
 
-#### prepare-computation
-
-Message to inform the backend about the computation that is currently worked on.  
-The backend can then prepare for running the computation. 
-For example, if the value for environment in the [computation template](../developer/computation_template.md) is `docker`, the backend can prepare by already pulling the respective docker image.
-
-After preparation, an information is sent back to the browser using a [prepared computation message](#prepared-computation)
-
-``` json title="prepare-computation Message Example"
-{
-    "type": "prepare-computation",
-    "content": {
-        "template" : "eyJpZGVudGlmaWVyIjoiMTE0ODNmMjMtOTViZi00MjRhLTk4YTUtZWU1ODY4Yzg1YzNmIiw...",
-        "task" : {
-            "template" : "11483f23-95bf-424a-98a5-ee5868c85c3f",
-            "identifier" : "b547d5f0-9346-05c6-6bdd-8e32e50abc96",
-            "files" : [ ... ]
-        }
-    }
-}
-```
-
 #### create-computation
 
 Message to create a new [Computation](../developer/computation.md) from a [Computation Template](../developer/computation_template.md) and a [Computation Task](../developer/computation_task.md). 
@@ -108,6 +86,32 @@ This Computation is sent back to the browser using a [computation message](#comp
                     ]
                 }
             ]
+        }
+    }
+}
+```
+
+#### prepare-computation
+
+Message to inform the backend about the computation that is currently worked on.  
+The backend can then prepare for running the computation. 
+For example, if the value for environment in the [computation template](../developer/computation_template.md) is `docker`, the backend can prepare by already pulling the respective docker image.
+
+This message is identical to the [create-computation message](#create-computation) above, apart from the message type. 
+After preparation, an information is sent back to the browser using a [prepared-computation message](#prepared-computation).
+
+The goal of this message for the future is, that the template ultimately only has to be sent once. 
+For this, the 'prepare-computation-id' is used, that is returned by the [prepared-computation message](#prepared-computation).
+
+``` json title="prepare-computation Message Example"
+{
+    "type": "prepare-computation",
+    "content": {
+        "template" : "eyJpZGVudGlmaWVyIjoiMTE0ODNmMjMtOTViZi00MjRhLTk4YTUtZWU1ODY4Yzg1YzNmIiw...",
+        "task" : {
+            "template" : "11483f23-95bf-424a-98a5-ee5868c85c3f",
+            "identifier" : "b547d5f0-9346-05c6-6bdd-8e32e50abc96",
+            "files" : [ ... ]
         }
     }
 }
@@ -154,7 +158,8 @@ This message is used to send a Computation back to the browser.
 
 #### prepared-computation
 
-This message is used to signal, that preparation of the backend was successful.
+This message is used to signal, that preparation of the backend was successful. 
+The id that is returned is a prepare-computation-id.
 
 ``` json title="prepared-computation Message Example"
 {

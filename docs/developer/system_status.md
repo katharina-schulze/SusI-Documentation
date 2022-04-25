@@ -6,12 +6,15 @@ To inform frontend about computations in-preparation.
 
 ``` json title="System Status Message of Type 'info'"
 {
-  "identifier" : "86165eea-14df-4a76-805a-09b21441cbf7",
-  "version" : "3.0.0"
-  "computation" : "4598393-95bf-409a-98a5-ee375982c3e",  // uuid of corresponding computation
-  "status" : "info", // warning and error, 
-  "timestamp" : "2022-04-21T18:21Z", // creation time of this message in ISO-8601
-  "message" : "Docker container is starting"
+  "type": "system-status",
+  "content": {
+    "identifier" : "86165eea-14df-4a76-805a-09b21441cbf7",
+    "version" : "3.0.0",
+    "computation" : "4598393-95bf-409a-98a5-ee375982c3e",  // uuid of corresponding computation
+    "status" : "info", // warning and error, 
+    "timestamp" : "2022-04-21T18:21Z", // creation time of this message in ISO-8601
+    "message" : "Docker container is starting"
+  }
 }
 ```
 
