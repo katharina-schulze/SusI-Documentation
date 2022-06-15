@@ -55,6 +55,329 @@ the following structure:
 *PARAM_ID* is the reference (key) to a parameter name inside the mustache template.
 "value" is the selected value of the user in the frontend.
 
+### Parameters: What is input into the Handlebars.js-Template?
+
+<table>
+  <tr>
+    <th>Parameter guitype</th>
+    <th>Returns</th>
+  </tr>
+  <tr>
+    <td>checkbox</td>
+    <td>
+      ``` json title="Checkbox Example"
+      {
+        "mode" : "fixed",
+        "identifier" : "__checkbox__", 
+        "metadata" : {
+          "guiType": "checkbox",
+          "name": "Things I like",
+          "decription" : "Select things you like"
+        },
+        "options": [
+          {
+            "value" : "programming",
+            "selected" : true
+          },
+          {
+            "value" : "music"
+            "selected" : true
+          },
+          {
+            "value" : "books"
+          }
+        ],
+        "validation": "anyof"
+      } 
+      ```
+      ``` title="Checkbox Returns"
+      ["programming", "music"] 
+      ```
+    </td>
+    <td>
+      Array of Strings
+    </td>
+  </tr>
+  <tr>
+    <td>radio</td>
+    <td>
+      ``` json title="Radio Example"
+      {
+        "mode" : "fixed",
+        "identifier" : "__radioButton__", 
+        "metadata" : {
+          "guiType": "radio",
+          "name": "Favorite PL",
+          "decription" : "Select your favorite programming language",
+        },
+        "options": [
+          {
+            "value" : "C"
+          },
+          {
+            "value" : "Java",
+            "selected" : true
+          },
+          {
+            "value" : "Haskell",
+            "disabled" : true
+          },
+          {
+            "value" : "Python"
+          }
+        ],
+        "validation": "oneof"
+      }
+      ```
+      ``` title="Radio Returns"
+      "Java"
+      ```
+    </td>
+    <td>
+      String
+    </td>
+  </tr>
+  <tr>
+    <td>dropdown (single)</td>
+    <td>
+      ``` json title="Dropdown (single) Example"
+      {
+        "mode" : "fixed",
+        "identifier" : "__dropdownSingle__", 
+        "metadata" : {
+          "guiType": "dropdown",
+          "name": "Fridge",
+          "decription" : "How often do look into the fridge a day?"
+        },
+        "options": [
+          {
+            "value" : "Please choose one",
+            "disabled" : true
+          },
+          {
+            "value" : "never",
+            "selected" : true
+          },
+          {
+            "value" : "Once a day"
+          },
+          {
+            "value" : "Twice a day"
+          },
+          {
+            "value" : "Three times a day"
+          },
+          {
+            "value" : "More than three times a day"
+          }
+        ],
+        "validation": "oneof"
+      }
+      ```
+      ``` title=" Dropdown (single) Returns"
+      "never"
+      ```
+    </td>
+    <td>
+      String
+    </td>
+  </tr>
+  <tr>
+    <td>dropdown (multiple)</td>
+    <td>
+      ``` json title="Dropdown (multiple) Example"
+      {
+        "mode" : "fixed",
+        "identifier" : "__dropdownMultiple__", 
+        "metadata" : {
+          "guiType": "dropdown",
+          "name": "Dance Time",
+          "decription" : "To which songs would you dance in the kitchen?"
+        },
+        "options": [
+          {
+            "value" : "Please choose multiple",
+            "disabled" : true
+          },
+          {
+            "value" : "Last Christmas",
+            "selected" : true
+          },
+          {
+            "value" : "White Christmas"
+          },
+          {
+            "value" : "Winter Woderland"
+          },
+          {
+            "value" : "Thats Christmas To Me", 
+            "selected" : true
+          },
+          {
+            "value" : "O Come All Ye Faithful", 
+            "disabled" : true
+          }
+        ], 
+        "validation": "anyof"
+      }
+      ```
+      ``` title="Dropdown (multiple) Result"
+      ["Last Christmas", "Thats Christmas To Me"]
+      ```
+    </td>
+    <td>
+      Array of Strings
+    </td>
+  </tr>
+  <tr>
+    <td>toggle</td>
+    <td>
+      ``` json title="Toggle Example"
+      {
+        "mode" : "fixed",
+        "identifier" : "__toggle__", 
+        "metadata" : {
+          "guiType": "toggle",
+          "name": "NO!",
+          "decription" : "What do you dislike?"
+        },
+        "options": [
+          {
+            "value" : "Spiders",
+            "selected" : true
+          },
+          {
+            "value" : "All kinds of Bugs (also the ones living in your Computer)"
+          },
+          {
+            "value" : "I never dislike anything!"
+          }
+        ], 
+        "validation": "anyof"
+      }
+      ```
+      ``` title="Toggle Result"
+      ["Spiders"]
+      ```
+    </td>
+    <td>
+      Array of Strings
+    </td>
+  </tr>
+  <tr>
+    <td>slider (single)</td>
+    <td>
+      ``` json title="Slider (single) Example"
+      {
+        "mode" : "any",
+        "identifier" : "__sliderSingle__", 
+        "metadata" : {
+          "guiType" : "slider",
+          "name": "Temperature",
+          "vertical": false,
+          "decription" : "How hot do you like your coffee? (in degrees Celsius)"
+        },
+        "default": [
+          75
+        ],
+        "min": 0,
+        "max": 90,
+        "step": 10,
+        "validation": "range"
+      }
+      ```
+      ``` title="Slider (single) Result"
+      75
+      ```
+    </td>
+    <td>
+      Number
+    </td>
+  </tr>
+  <tr>
+    <td>slider (multiple)</td>
+    <td>
+      ``` json title="Slider (multiple) Example"
+      {
+        "mode" : "any",
+        "identifier" : "__sliderMultiple__", 
+        "metadata" : {
+          "guiType" : "slider",
+          "name": "random numbers",
+          "vertical": true,
+          "decription" : "Choose three random numbers to be output by the container"
+        },
+        "default": [
+          25,
+          50,
+          75
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "validation": "range"
+      }
+      ```
+      ``` title="Slider (multiple) Result"
+      [25, 50, 75]
+      ```
+    </td>
+    <td>
+      Array of Numbers
+    </td>
+  </tr>
+  <tr>
+    <td>input_field</td>
+    <td>
+      ``` json title="Input_field Example"
+      {
+        "mode" : "any",
+        "identifier" : "__inputText__", 
+        "metadata" : {
+          "guiType" : "input_field",
+          "type": "text",
+          "name": "name",
+          "decription" : "Enter your name"
+        },
+        "default" : [""],
+        "validation": "none"
+      }
+      ```
+      ``` title="Input_field Result"
+      "base64:S2F0aHJ5bg"
+      ```
+    </td>
+    <td>
+      If the input_field is of type number: Number
+      Else: Prefixed ("base64:") and Base64URL-encoded String - is decoded by Websocket API, before it is sent to Backend
+    </td>
+  </tr>
+  <tr>
+    <td>editor</td>
+    <td>
+      ``` json title="Editor Example"
+      {
+        "mode" : "any",
+        "identifier" : "__default__", 
+        "metadata" : {
+          "guiType" : "editor", 
+          "name": "code",
+          "decription" : "Enter some code"
+        },
+        "default": ["aW50IG1haW4oaW50IGFyZ2MsIGNoYXIgKiphcmd2KSB7IC8vIFByaW50ICdIZWxsbyBXb3JsZCcgfQ"],
+        "validation": "pattern"
+      }
+      ```
+      ``` title="Editor Result"
+      "base64:aW50IG1haW4oaW50IGFyZ2MsIGNoYXIgKiphcmd2KSB7IC8vIFByaW50ICdIZWxsbyBXb3JsZCcgfQ"
+      ```
+    </td>
+    <td>
+      Prefixed ("base64:") and Base64URL-encoded String - is decoded by Websocket API, before it is sent to Backend
+    </td>
+  </tr>
+</table>
+
 ## Evaluation Task
 
 The feature of ViPLab to automatically evaluate student code (correction service)
