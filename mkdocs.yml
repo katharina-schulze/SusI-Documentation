@@ -11,6 +11,8 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
 edit_uri: https://github.com/KatLily-74656/SusI-Documentation/tree/master/docs
 repo_url: https://github.com/VirtualProgrammingLab
 repo_name: VirtualProgrammingLab
