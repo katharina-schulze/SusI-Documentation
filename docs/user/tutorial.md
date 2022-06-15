@@ -401,7 +401,7 @@ Here, you can see the Copmutation Template asking for the input of the user:
               "maxlength": 200,
               "default" : [""],
               "validation": "pattern", 
-              "pattern": "^[A-z]+$"
+              "pattern": "^[A-z_! ]+$"
             },
             {
               "mode" : "any",
