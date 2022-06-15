@@ -27,8 +27,10 @@ The documentation contains five main parts:
     - ...
 - Displaying the following File-Types in the Result:
     - VTU & VTK
+    - JSON
     - CSV
     - PNG
+    - JPEG
     - ViPLab Graphics Formats
 - Specify whether a certain File-Type should be displayed in the Result
 - Configure Parameters using GUI-Elements, like
@@ -40,4 +42,4 @@ The documentation contains five main parts:
     - Dropdowns
     - Editors
 - Show Two-Column-View or One-Column-View (Minimize / Maximize)
-- Download and Uplaod Backups
+- Download and Upload Backups
