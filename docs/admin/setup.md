@@ -6,10 +6,7 @@ If you want to set it up...
 
 * ... in ILIAS: Follow the link specified in the section about the [Integration into ILIAS](integration.md#integration-into-ilias)
 * ... in DaRUS: Follow the link specified in the section about the [Integration into DaRUS](integration.md#integration-into-a-research-management-software-like-darus)
-* ... in a System of your choice: Take a look at the [Git-Repository](http://example.com/) of the Frontend to find an overview on what you need to use it
-
-!!! error "TODO"
-        After publishing the Frontend Repo, change to the correct Git-Repository link
+* ... in a System of your choice: Take a look at the [Git-Repository](https://github.com/VirtualProgrammingLab/viplab-vue-frontend) of the Frontend to find an overview on what you need to use it
 
 ## Websocket API
 

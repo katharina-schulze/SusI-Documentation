@@ -15,11 +15,9 @@ It was developed using the JavaScript Framework Vue.js.
 The user can enter his/her input using the graphical interface. 
 If the user sends the input, a JSON message is generated and sent to the Websocket API.
 
-
 An overview with descriptions of the Frontend can be found here: [ViPLab Frontend](../user/frontend.md).
 
-!!! error "TODO"
-    Publish Repo on GitHub and add Link to it
+The Repository containing the Code is published on [GitHub](https://github.com/VirtualProgrammingLab/viplab-vue-frontend).
 
 #### Websocket API
 
